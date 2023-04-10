@@ -1,0 +1,2410 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Poppins:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
+.App {
+
+  .App-header {
+    display: flex;
+    width: 100%;
+    height: 817px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-image: url("./assets/img/unsplash_FN-cedy6NHA.jpg");
+
+
+    .head {
+      height: 20%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .logotype {
+        display: flex;
+        align-items: center;
+
+        .dog-head {
+          width: 150px;
+        }
+      }
+
+      .nav {
+        display: flex;
+        gap: 28px;
+
+        span {
+          font-family: 'Comfortaa', cursive;
+          font-size: 0.875rem;
+          text-transform: uppercase;
+        }
+      }
+    }
+
+    .title {
+      height: 80%;
+      display: flex;
+      align-items: center;
+
+      .title-items {
+        .title-text {
+          .text {
+            .title-head {
+              display: flex;
+              align-items: center;
+              gap: 3rem;
+
+              h1 {
+                display: block;
+                order: 1;
+                font-size: 4rem;
+                font-family: 'Poppins', sans-serif;
+              }
+
+              .play {
+                order: 2;
+                display: flex;
+                align-items: center;
+
+                img {
+                  cursor: pointer;
+                  width: 67px;
+                }
+
+                .play-text {
+                  font-family: 'Comfortaa', cursive;
+                  margin-left: 1.375rem;
+                }
+              }
+            }
+
+            span {
+              font-size: 1.25rem;
+              font-family: 'Comfortaa', cursive;
+              letter-spacing: 0.78em;
+            }
+          }
+        }
+
+        .dogs {
+          display: none;
+        }
+
+        .title-options {
+          margin-top: 75px;
+          display: flex;
+          align-items: center;
+
+          button {
+            font-family: 'Comfortaa', cursive;
+            font-weight: 500;
+            background: #F2C067;
+            border-radius: 90px;
+            border: none;
+            height: 50px;
+            width: 300px;
+          }
+
+          .telegram {
+            margin-left: 2.5rem;
+
+            img {
+              cursor: pointer;
+            }
+
+            span {
+              margin-left: 1.375rem;
+              text-transform: uppercase;
+              font-family: 'Comfortaa', cursive;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .content {
+    position: relative;
+    bottom: 50px;
+
+    .description {
+      .description-pictures {
+        position: relative;
+        bottom: 530px;
+        float: right;
+
+        .description-items {
+          .switch {
+            position: relative;
+            top: 190px;
+            left: 55px;
+          }
+
+          .gif {
+            position: relative;
+            top: 120px;
+            left: 390px
+          }
+        }
+      }
+
+      .description-rectangle {
+        img {
+          width: 100%;
+        }
+      }
+    }
+
+    .section-2 {
+      width: 100%;
+      position: absolute;
+
+      .section-2-items {
+        background-image: url("./assets/img/background-section2.png");
+        background-position: center;
+        background-size: cover;
+        padding-top: 26px;
+        padding-bottom: 42px;
+
+        .items {
+          display: flex;
+          justify-content: space-between;
+
+          .s2-title {
+            font-size: 2.5rem;
+            text-transform: uppercase;
+            font-family: 'Poppins', sans-serif;
+            letter-spacing: 0.105em;
+          }
+
+          .info {
+            width: 480px;
+
+            .info1 {
+              font-family: 'Comfortaa', cursive;
+              font-size: 1.25rem;
+              letter-spacing: 0.105em;
+            }
+
+            .info2 {
+              margin-top: 106px;
+
+              span {
+                letter-spacing: 0.105em;
+                display: block;
+              }
+
+              .info2-title {
+                font-size: 1.5rem;
+                text-transform: uppercase;
+                font-family: 'Poppins', sans-serif;
+
+              }
+
+              .info2-description {
+                margin-top: 36px;
+                font-family: 'Comfortaa', cursive;
+                font-size: 1.25rem;
+              }
+            }
+          }
+        }
+      }
+
+      .split-pictures {
+        position: relative;
+        bottom: 280px;
+      }
+    }
+
+    .section-3 {
+      margin-top: 616px;
+      background: #58575C;
+
+      .sections-3-items {
+        padding-top: 100px;
+
+        h1 {
+          font-family: 'Poppins', sans-serif;
+          color: white;
+          text-transform: uppercase;
+
+        }
+
+        .line {
+          margin-top: 70px;
+
+          .q-numbers {
+            display: flex;
+            justify-content: center;
+            gap: 25%;
+            width: 100%;
+
+            span {
+              color: white;
+              font-family: 'Montserrat', sans-serif;
+              margin-bottom: 20px;
+            }
+          }
+
+          img {
+            width: 100%;
+          }
+        }
+
+        .questions {
+          margin-top: 50px;
+          display: flex;
+          justify-content: space-between;
+
+          .card {
+            height: 350px;
+            width: 260px;
+            border-radius: 12px;
+            padding-top: 20px;
+
+            .card-title {
+              text-align: center;
+              color: #F2C067;
+              font-size: 20px;
+              font-family: 'Poppins', sans-serif;
+            }
+
+            .question {
+              margin-left: 14px;
+
+              span {
+                margin-left: 8px;
+                font-family: 'Comfortaa', cursive;
+              }
+            }
+          }
+        }
+      }
+
+      .s3-split-pictures {
+        position: relative;
+        top: 80px;
+        padding-left: 160px;
+
+
+        .big-dog {
+          margin-left: 250px;
+        }
+      }
+    }
+
+    .section-4 {
+      background-color: #F2C067;
+
+
+      .s-4-items {
+        padding-top: 166px;
+        background-image: url("./assets/img/dog-foot.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 100%;
+
+        h1 {
+          text-transform: uppercase;
+          font-family: 'Poppins', sans-serif;
+          margin-bottom: 51px;
+        }
+
+        .s-4-cards {
+          display: flex;
+          justify-content: space-between;
+
+
+          .width-split-line {
+            display: none;
+          }
+
+          .card-title {
+            padding-left: 20px;
+            padding-right: 20px;
+            color: white;
+            font-family: 'Poppins', sans-serif;
+            font-size: 2rem;
+            display: block;
+          }
+
+          .card-info {
+            padding-left: 20px;
+            padding-right: 20px;
+            font-family: 'Comfortaa', cursive;
+            display: block;
+          }
+        }
+
+        .install-block {
+          position: relative;
+          top: 100px;
+
+          .install {
+            display: flex;
+
+            .install-items {
+              position: absolute;
+              width: 80%;
+              height: 268px;
+              margin-top: 196px;
+              background: white;
+              border-radius: 12px;
+              padding: 50px 50px;
+
+              span {
+                display: block;
+              }
+
+              .install-title {
+                font-family: 'Poppins', sans-serif;
+                font-size: 2.25rem;
+                font-weight: 500;
+              }
+
+              .install-title-adaptive {
+                display: none;
+              }
+
+              .install-text {
+                margin-top: 14px;
+                font-family: 'Comfortaa', cursive;
+              }
+
+              .links {
+                margin-top: 36px;
+                display: flex;
+                align-items: center;
+                gap: 50px;
+
+                button {
+                  height: 55px;
+                  width: 250px;
+                  border-radius: 6px;
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  background: white;
+
+                  span {
+                    margin-left: 10px;
+                  }
+                }
+              }
+            }
+
+            .phone {
+              position: relative;
+              left: 54%;
+            }
+          }
+        }
+      }
+    }
+
+    .section-5 {
+      margin-top: 100px;
+      padding-bottom: 100px;
+
+
+      h1 {
+        font-family: 'Poppins', sans-serif;
+        text-transform: uppercase;
+      }
+
+      .diagram {
+        margin-top: 100px;
+        display: flex;
+        justify-content: center;
+      }
+
+      .dog-head {
+        display: flex;
+        justify-content: center;
+      }
+
+      .adaptive-numbers {
+        display: none;
+      }
+
+      .diagram-numbers {
+        .presale {
+          width: 300px;
+          position: relative;
+          bottom: 500px;
+        }
+
+        .marketing {
+          width: 200px;
+          position: relative;
+          bottom: 550px;
+          left: 1000px;
+        }
+
+        .team {
+          width: 200px;
+          position: relative;
+          bottom: 250px;
+          left: 1000px
+        }
+
+        .locked {
+          width: 200px;
+          position: relative;
+          bottom: 200px;
+          left: 650px;
+        }
+
+        .num-1 {
+          width: 200px;
+          position: relative;
+          bottom: 350px;
+          left: 350px;
+        }
+
+        .num-2 {
+          width: 200px;
+          position: relative;
+          bottom: 350px;
+          left: 500px;
+        }
+
+        .fees {
+          width: 400px;
+          position: relative;
+          bottom: 350px;
+          left: 300px;
+        }
+
+        span {
+          display: block;
+          font-size: 1.875rem;
+          font-family: 'Comfortaa', cursive;
+        }
+
+        .numbers-title {
+          font-family: 'Poppins', sans-serif;
+          color: #F2C067;
+          font-size: 1.5rem;
+        }
+      }
+
+      .diagram-info {
+        margin-top: 200px;
+
+        .info-description {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+
+          .description {
+
+            .description-title {
+              font-family: 'Poppins', sans-serif;
+              color: #F2C067;
+              font-size: 1.875rem;;
+            }
+
+            span {
+              display: block;
+              font-family: 'Comfortaa', cursive;
+              letter-spacing: 0.105em;
+            }
+
+            .info-title {
+              margin-top: 30px;
+              font-size: 2.25rem;
+              text-transform: uppercase;
+            }
+
+            .info-text {
+              margin-top: 20px;
+            }
+          }
+        }
+
+        img {
+          position: relative;
+          top: 50px
+        }
+      }
+
+      .diagram-table {
+        background: #58575C;
+        border-radius: 20px;
+        display: flex;
+        justify-content: space-between;
+        padding: 50px 60px;
+
+        .items {
+          span {
+            display: block;
+            font-size: 2.25rem;
+            font-family: 'Comfortaa', cursive;
+            color: white;
+          }
+
+          img {
+            display: none;
+          }
+
+          .th {
+            font-family: 'Poppins', sans-serif;
+            color: #F2C067;
+            font-size: 1.5rem;
+            margin-bottom: 33px;
+          }
+        }
+
+        .splitLine {
+          position: static;
+        }
+      }
+    }
+
+    .section-6 {
+      background-image: url("./assets/img/background-s6.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      display: flex;
+      align-items: center;
+      padding-top: 7rem;
+      padding-bottom: 7rem;
+      height: 700px;
+      position: relative;
+      top: 100px;
+
+      .partners {
+
+        h1 {
+          font-family: 'Poppins', sans-serif;
+          font-size: 2.5rem;
+          text-transform: uppercase;
+          color: white;
+        }
+
+        .partners-items {
+          margin-top: 70px;
+
+          span {
+            background: #767779;
+            height: 80px;
+            width: 360px;
+            border-radius: 12px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+          }
+
+          .top-partners {
+            display: flex;
+            justify-content: space-between;
+          }
+
+          .bot-partners {
+            margin-top: 40px;
+            display: flex;
+            gap: 40px;
+          }
+        }
+      }
+    }
+
+    .section-7 {
+      background-image: url("./assets/img/background-s7.jpg");
+      background-size: cover;
+      background-position: center;
+      padding-top: 168px;
+      padding-bottom: 168px;
+
+      .s7-items {
+
+        .title {
+          width: 100%;
+          display: flex;
+          justify-content: space-between;
+
+          .logo {
+            .title-text {
+              color: black;
+              font-size: 60px;
+            }
+          }
+
+          .date {
+            margin-top: 15px;
+          }
+
+          span {
+            text-transform: uppercase;
+            display: block;
+            font-family: 'Poppins', sans-serif;
+            font-size: 2.5rem;
+            color: #F2C067
+          }
+        }
+
+        .pictures {
+          display: flex;
+          justify-content: space-between;
+
+          .dog-head {
+            margin-top: 90px;
+
+            span {
+              display: block;
+              font-family: 'Comfortaa', cursive;
+              letter-spacing: 0.105em;
+            }
+          }
+
+          .air-event {
+            width: 100%;
+          }
+        }
+
+        .btn {
+          display: flex;
+          justify-content: center;
+          border: none;
+
+          button {
+            margin-top: 109px;
+            color: white;
+            background: #3D4551;
+            height: 50px;
+            width: 300px;
+            border-radius: 90px;
+            font-family: 'Comfortaa', cursive;
+            border: none;
+          }
+        }
+      }
+    }
+
+    .section-8 {
+
+      h1 {
+        font-family: 'Poppins', sans-serif;
+        text-transform: uppercase;
+      }
+
+      .s8-items {
+        margin-top: 100px;
+        background-image: url("./assets/img/s-8-items-background.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding-left: 60px;
+        padding-top: 100px;
+        padding-bottom: 150px;
+        border-radius: 12px;
+
+        .items-title {
+          font-family: 'Poppins', sans-serif;
+          font-size: 2.25rem;
+          color: white;
+        }
+
+        .items-text {
+          display: block;
+          font-family: 'Comfortaa', cursive;
+          letter-spacing: 0.105em;
+          margin-top: 14px;
+        }
+
+        button {
+          margin-top: 36px;
+          border: none;
+          font-family: 'Comfortaa', cursive;
+          height: 55px;
+          width: 250px;
+          border-radius: 6px;
+
+
+          img {
+            margin-right: 10px;
+          }
+        }
+      }
+    }
+
+    .section-9 {
+      margin-top: 200px;
+
+      h1 {
+        font-family: 'Poppins', sans-serif;
+        text-transform: uppercase;
+      }
+
+      .cards {
+        margin-top: 60px;
+
+        .first-cards {
+          display: flex;
+
+          img {
+            width: 50%;
+          }
+        }
+
+        .second-cards {
+          display: flex;
+
+          img {
+            width: 50%;
+          }
+        }
+      }
+    }
+
+    .section-10 {
+      margin-top: 200px;
+
+      h1 {
+        font-family: 'Poppins', sans-serif;
+        text-transform: uppercase;
+      }
+
+      .video-block {
+        margin-top: 100px;
+        margin-bottom: 100px;
+
+        iframe {
+          border-radius: 20px;
+        }
+      }
+    }
+  }
+
+  .footer {
+    background: #F2C067;
+    padding-top: 70px;
+    padding-bottom: 35px;
+
+    .footer-head {
+      display: flex;
+      justify-content: space-between;
+
+      .logo {
+        display: flex;
+        align-items: center;
+
+        img {
+          width: 200px;
+        }
+
+        .logo-text {
+          margin-bottom: 40px;
+
+          h1 {
+            font-family: 'Montserrat', sans-serif;
+          }
+        }
+      }
+
+      .links-adaptive {
+        display: none;
+      }
+
+      .links {
+        width: 60%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        img {
+          cursor: pointer;
+        }
+      }
+    }
+
+    .footer-text {
+      .years {
+        margin-top: 34px;
+      }
+
+      span {
+        display: block;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .App {
+    .content {
+      .section-5 {
+        background-position: center;
+        background-size: cover;
+
+        .diagram-numbers {
+          .presale {
+          }
+
+          .marketing {
+            position: relative;
+            bottom: 550px;
+            left: 900px;
+          }
+
+          .team {
+            position: relative;
+            bottom: 250px;
+            left: 900px
+          }
+
+          .locked {
+            position: relative;
+            bottom: 230px;
+            left: 570px;
+          }
+
+          .num-1 {
+            position: relative;
+            bottom: 350px;
+            left: 300px;
+          }
+
+          .num-2 {
+            position: relative;
+            bottom: 350px;
+            left: 410px;
+          }
+
+          .fees {
+            position: relative;
+            bottom: 350px;
+            left: 250px;
+          }
+        }
+
+        .diagram-info {
+          margin-top: 0;
+          position: relative;
+          bottom: 300px;
+        }
+      }
+
+      .section-6 {
+        background-position: center;
+      }
+    }
+  }
+}
+
+
+@media screen and (max-width: 1200px) {
+  .App {
+    .App-header {
+      background-size: 100%;
+      background-position: center;
+      background-image: url("./assets/img/title-background-adaptive.png");
+
+      .head {
+        display: block;
+
+        .logotype {
+          display: flex;
+          justify-content: center;
+        }
+
+        .nav {
+          display: none;
+        }
+      }
+
+      .title {
+        .title-items {
+          width: 100%;
+          margin-top: 200px;
+          margin-bottom: 600px;
+
+          .title-text {
+            display: flex;
+            justify-content: center;
+
+            .text {
+
+              .title-head {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+
+                h1 {
+                  margin-top: 20px;
+                }
+
+                .play {
+                  display: block;
+                  width: 300px;
+                  margin-left: auto;
+                  margin-right: auto;
+
+                  .play-text {
+                    margin-top: 10px;
+                  }
+
+                  img {
+                    display: block;
+                    margin-left: auto;
+                    margin-right: auto;
+                  }
+                }
+              }
+            }
+          }
+
+          .title-options {
+            display: flex;
+            justify-content: center;
+          }
+        }
+      }
+    }
+
+    .content {
+      position: relative;
+      bottom: 20px;
+
+      .description {
+        .description-pictures {
+          float: left;
+        }
+      }
+
+      .section-2 {
+        .section-2-items {
+          .items {
+            width: 100%;
+            display: block;
+
+            .s2-title {
+              display: flex;
+              justify-content: center;
+              font-size: 60px;
+              margin-top: 100px;
+            }
+
+            .info {
+              width: 100%;
+
+              .info1 {
+                margin-top: 15px;
+                text-align: center;
+              }
+
+              .info2 {
+
+                padding-bottom: 300px;
+
+                .info2-title {
+                  display: flex;
+                  justify-content: center;
+                  font-size: 60px;
+                }
+
+                .info2-description {
+                  text-align: center;
+                }
+              }
+
+              span {
+                display: block;
+              }
+            }
+          }
+        }
+
+        .split-pictures {
+          position: relative;
+          bottom: 280px;
+        }
+      }
+
+      .section-3 {
+        margin-top: 1200px;
+
+        .sections-3-items {
+          text-align: center;
+
+          h1 {
+            font-size: 60px;
+          }
+
+          .questions {
+            display: flex;
+            justify-content: space-around;
+            gap: 30px;
+
+            .card {
+              width: 350px;
+
+              .question {
+                margin-left: 0;
+              }
+            }
+          }
+        }
+
+        .s3-split-pictures {
+          padding-left: 0;
+          margin-left: 100px;
+
+          .big-dog {
+            margin-left: 0;
+          }
+        }
+      }
+
+      .section-4 {
+        .s-4-items {
+          h1 {
+            text-align: center;
+            font-size: 60px;
+          }
+
+          .install-block {
+            position: initial;
+
+            .install {
+              display: flex;
+              justify-content: center;
+              border-radius: 12px;
+
+              .install-items {
+                width: 90%;
+              }
+
+              .phone {
+                position: relative;
+                width: 400px;
+                left: 30%;
+              }
+            }
+          }
+        }
+      }
+
+      .section-5 {
+        padding-bottom: 0;
+
+        h1 {
+          text-align: center;
+          font-size: 60px;
+        }
+
+        .diagram-numbers {
+
+          .marketing {
+            width: 130px;
+            position: relative;
+            bottom: 550px;
+            left: 800px;
+          }
+
+          .team {
+            width: 130px;
+            position: relative;
+            bottom: 270px;
+            left: 800px
+          }
+
+          .locked {
+            position: relative;
+            bottom: 230px;
+            left: 500px;
+          }
+
+          .num-1 {
+            position: relative;
+            bottom: 350px;
+            left: 200px;
+          }
+
+          .num-2 {
+            position: relative;
+            bottom: 350px;
+            left: 320px;
+          }
+
+          .fees {
+            position: relative;
+            bottom: 350px;
+            left: 170px;
+          }
+        }
+
+        .diagram-info {
+          .info-description {
+            .description {
+              .info-text {
+                text-align: center;
+                width: 400px;
+              }
+            }
+          }
+        }
+      }
+
+      .section-6 {
+        .partners {
+          h1 {
+            text-align: center;
+            font-size: 60px;
+          }
+
+          .partners-items {
+            .top-partners {
+              span {
+                width: 300px;
+
+                img {
+                  width: 200px;
+                }
+              }
+            }
+
+            .bot-partners {
+              span {
+                width: 200px;
+
+                img {
+                  width: 150px;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .section-8 {
+        h1 {
+          text-align: center;
+          font-size: 60px;
+        }
+      }
+
+      .section-9 {
+        display: flex;
+        justify-content: center;
+
+        h1 {
+          text-align: center;
+          font-size: 60px;
+        }
+
+        .cards {
+
+          .first-cards {
+            display: flex;
+            justify-content: center;
+
+            img {
+              width: 80%;
+            }
+          }
+
+          .second-cards {
+            display: flex;
+            justify-content: center;
+
+            img {
+              width: 80%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 992px) and (min-width: 977px) {
+  .App {
+    .content {
+      .description {
+        .description-pictures {
+          .description-items {
+            .dogs {
+              margin-top: 200px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .App {
+    .App-header {
+      .title {
+        .title-items {
+          .title-text {
+            .text {
+              .title-head {
+                h1 {
+                  font-size: 46px;
+                  text-align: center;
+                }
+              }
+
+              span {
+                display: flex;
+                justify-content: center;
+                font-size: 12px;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .content {
+      .description {
+        .description-pictures {
+          position: relative;
+          bottom: 670px;
+
+          .description-items {
+            .dogs {
+              float: right;
+            }
+
+            .switch {
+              position: relative;
+              top: 490px;
+              left: 150px;
+              float: left;
+            }
+
+            .gif {
+              position: relative;
+              top: 400px;
+              left: 40px
+            }
+          }
+        }
+      }
+
+      .section-2 {
+        .section-2-items {
+          .items {
+            .s2-title {
+              span {
+                font-size: 40px;
+              }
+            }
+
+            .info {
+              .info1 {
+                span {
+                  font-size: 16px;
+                }
+              }
+
+              .info2 {
+                padding-bottom: 400px;
+
+                .info2-title {
+                  font-size: 40px;
+                }
+
+                .info2-description {
+                  font-size: 16px;
+                }
+              }
+            }
+          }
+        }
+
+        .split-pictures {
+
+        }
+      }
+
+      .section-3 {
+        .sections-3-items {
+          .questions {
+            .card {
+              width: 250px;
+            }
+          }
+        }
+
+        .s3-split-pictures {
+          .big-dog {
+            width: 50%;
+          }
+
+          .small-dog {
+            width: 40%;
+          }
+        }
+      }
+
+      .section-4 {
+        display: flex;
+        justify-content: center;
+
+        .s-4-items {
+          h1 {
+            font-size: 40px;
+          }
+
+          .splitLine {
+            display: none;
+          }
+
+          .s-4-cards {
+            display: block;
+
+            .width-split-line {
+              display: initial;
+            }
+
+            .card-info {
+              margin-top: 15px;
+              margin-bottom: 10px;
+              font-size: 20px;
+            }
+
+            span {
+              text-align: center;
+              display: block;
+            }
+
+            img {
+              padding-top: 25px;
+              padding-bottom: 25px;
+              width: 100%;
+            }
+          }
+
+          .install-block {
+            display: flex;
+            justify-content: center;
+
+            .install {
+              display: flex;
+              justify-content: center;
+              border-radius: 12px;
+              width: 100%;
+              padding-bottom: 80px;
+              margin-top: 200px;
+              margin-bottom: 100px;
+
+              flex-direction: column-reverse;
+              background: white;
+
+              .install-items {
+                width: 100%;
+                position: relative;
+                bottom: 200px;
+                margin-top: 0;
+                background: white;
+                border-radius: 12px;
+
+                .links {
+                  width: 100%;
+                  display: flex;
+                  justify-content: center;
+                  flex-direction: column !important;
+
+                  button {
+                    width: 100%;
+                    height: 70px;
+                    border-radius: 6px;
+                  }
+                }
+
+                .install-title-adaptive {
+                  display: initial;
+                  font-size: 55px;
+                }
+
+                .install-title {
+                  display: none;
+                }
+
+                .install-text {
+                  font-size: 24px;
+                }
+              }
+
+              .phone {
+                position: relative;
+                bottom: 200px;
+                width: 100%;
+                left: 0;
+              }
+            }
+          }
+        }
+      }
+
+      .section-5 {
+        h1 {
+          font-size: 40px;
+        }
+
+        .adaptive-numbers {
+          display: initial;
+
+          .presale {
+            width: 70px;
+            position: relative;
+            bottom: 500px;
+          }
+
+          .marketing {
+            width: 70px;
+            position: relative;
+            bottom: 550px;
+            left: 600px;
+          }
+
+          .team {
+            width: 70px;
+            position: relative;
+            bottom: 250px;
+            left: 600px
+          }
+
+          .locked {
+            width: 70px;
+            position: relative;
+            bottom: 140px;
+            left: 360px;
+          }
+
+          .num-1 {
+            width: 50px;
+            position: relative;
+            bottom: 250px;
+            left: 100px;
+          }
+
+          .num-2 {
+            width: 50px;
+            position: relative;
+            bottom: 250px;
+            left: 210px;
+          }
+
+          span {
+            display: block;
+            font-size: 1.875rem;
+            font-family: 'Comfortaa', cursive;
+          }
+        }
+
+        .diagram-numbers {
+          position: relative;
+          bottom: 130px;
+          display: flex;
+          justify-content: center;
+          flex-direction: column;
+          text-align: center;
+
+          .presale {
+            width: 100%;
+            position: initial;
+          }
+
+          .marketing {
+            margin-top: 40px;
+            width: 100%;
+            position: initial;
+          }
+
+          .team {
+            margin-top: 40px;
+            width: 100%;
+            position: initial;
+          }
+
+          .locked {
+            margin-top: 40px;
+            width: 100%;
+            position: initial;
+          }
+
+          .num-1 {
+            display: none;
+          }
+
+          .num-2 {
+            display: none;
+          }
+
+          span {
+            font-size: 60px;
+          }
+        }
+
+        .diagram-info {
+          margin-top: 250px;
+
+          .info-description {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            .description {
+              span {
+                text-align: center;
+              }
+
+              .info-text {
+                width: initial;
+              }
+            }
+
+            img {
+              margin-left: auto;
+              margin-right: auto;
+            }
+          }
+
+          .diagram-table {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            .splitLine {
+              display: none;
+            }
+
+            img {
+              display: initial;
+              width: 100%;
+              margin-top: 20px;
+              margin-bottom: 20px;
+              position: initial;
+            }
+
+            span {
+              text-align: center;
+            }
+          }
+        }
+      }
+
+      .section-6 {
+        height: auto;
+
+        .partners {
+          h1 {
+            font-size: 50px;
+          }
+
+          .partners-items {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            .top-partners {
+              display: flex;
+              flex-direction: column;
+              gap: 40px;
+
+              span {
+                width: 100%;
+                height: 100px;
+              }
+            }
+
+            .bot-partners {
+              width: 100%;
+              display: flex;
+              flex-direction: column;
+              gap: 40px;
+
+              span {
+                width: 100%;
+                height: 100px;
+
+                img {
+                  width: 200px;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .section-7 {
+        .s7-items {
+          .title {
+            display: block;
+            text-align: center;
+          }
+
+          .pictures {
+            width: 100%;
+            display: flex;
+            flex-direction: column-reverse;
+            justify-content: center;
+
+            .dog-head {
+              margin-top: 0;
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+
+              img {
+                margin-left: auto;
+                margin-right: auto;
+                width: 100%;
+              }
+
+              span {
+                text-align: center;
+              }
+            }
+          }
+        }
+      }
+
+      .section-8 {
+        h1 {
+          font-size: 40px;
+        }
+
+        .s8-items {
+          height: 700px;
+          padding: 200px 60px 0;
+          align-items: center;
+
+          span {
+            display: block;
+          }
+
+          .items-title {
+            font-size: 60px;
+          }
+
+          .items-text {
+            font-size: 24px;
+          }
+
+          button {
+            margin-top: 68px;
+            width: 100%;
+            height: 70px;
+          }
+        }
+      }
+
+      .section-9 {
+        margin-top: 100px;
+
+        h1 {
+          font-size: 40px;
+        }
+
+        .cards {
+          display: block;
+
+          .col-6 {
+            width: 100%;
+
+            .first-cards {
+              img {
+                width: 80%;
+              }
+            }
+          }
+        }
+      }
+
+      .section-10 {
+        h1 {
+          font-size: 40px;
+          text-align: center;
+        }
+      }
+    }
+
+    .footer {
+      .footer-default {
+        display: block;
+
+        .footer-head {
+          display: block;
+
+          .logo {
+            display: flex;
+            justify-content: center;
+
+            .logo-text {
+              display: flex;
+              justify-content: center;
+              flex-direction: column;
+
+              h1 {
+                text-align: center;
+                font-size: 40px;
+              }
+
+              span {
+                text-align: center;
+                font-size: 16px;
+              }
+            }
+          }
+
+          .links {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+          }
+        }
+
+        .footer-text {
+          text-align: center;
+          margin-top: 50px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .App {
+    .content {
+      .section-5 {
+        .diagram {
+          img {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .App {
+    .App-header {
+      background-size: cover;
+      background-position: center;
+      height: 1500px;
+
+      .head {
+        height: auto;
+      }
+
+      .title {
+        height: auto;
+
+        .title-items {
+          margin-top: 0;
+          margin-bottom: 0;
+
+          .title-text {
+            .text {
+              .title-head {
+                margin-top: 40px;
+
+                .play {
+                  img {
+                    width: 100px;
+                  }
+                }
+              }
+            }
+          }
+
+          .dogs {
+            display: initial;
+            width: 100%;
+          }
+
+          .title-options {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            button {
+              width: 100%;
+              height: 100px;
+              font-size: 32px;
+            }
+
+            .telegram {
+              margin-top: 40px;
+              margin-left: 0;
+
+              img {
+                width: 80px;
+              }
+
+              span {
+                font-size: 24px;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .content {
+      .description {
+        .description-pictures {
+          .description-items {
+            .dogs {
+              display: none;
+            }
+          }
+        }
+      }
+
+      .section-2 {
+        .section-2-items {
+          .items {
+            .s2-title {
+              text-align: center;
+            }
+          }
+        }
+      }
+
+      .section-5 {
+        .adaptive-numbers {
+
+          .presale {
+            position: relative;
+            bottom: 300px;
+          }
+
+          .marketing {
+            width: 60px;
+            position: relative;
+            bottom: 350px;
+            left: 430px;
+          }
+
+          .team {
+            width: 60px;
+            position: relative;
+            bottom: 170px;
+            left: 400px
+          }
+
+          .locked {
+            width: 60px;
+            position: relative;
+            bottom: 140px;
+            left: 270px;
+          }
+
+          .num-1 {
+            width: 60px;
+            position: relative;
+            bottom: 225px;
+            left: 100px;
+          }
+
+          .num-2 {
+            width: 50px;
+            position: relative;
+            bottom: 250px;
+            left: 170px;
+          }
+        }
+      }
+
+      .section-6 {
+        .partners {
+          h1 {
+            font-size: 40px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .App {
+    .content {
+      .section-3 {
+        .sections-3-items {
+          .questions {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+          }
+        }
+      }
+
+      .section-5 {
+        .adaptive-numbers {
+
+          .presale {
+            position: relative;
+            bottom: 300px;
+          }
+
+          .marketing {
+            width: 60px;
+            position: relative;
+            bottom: 380px;
+            left: 460px;
+          }
+
+          .team {
+            width: 60px;
+            position: relative;
+            bottom: 170px;
+            left: 420px
+          }
+
+          .locked {
+            width: 60px;
+            position: relative;
+            bottom: 140px;
+            left: 270px;
+          }
+
+          .num-1 {
+            width: 60px;
+            position: relative;
+            bottom: 225px;
+            left: 100px;
+          }
+
+          .num-2 {
+            width: 50px;
+            position: relative;
+            bottom: 250px;
+            left: 170px;
+          }
+        }
+      }
+    }
+    .section-7 {
+      .s7-items {
+        .title {
+          .logo {
+          }
+        }
+        .pictures {
+          .dog-head {
+            img {
+              width: 30%;
+            }
+          }
+        }
+      }
+    }
+
+    .footer {
+      .footer-default {
+        .footer-head {
+          .logo {
+            display: flex;
+            flex-direction: column;
+          }
+
+          .links {
+            display: none;
+          }
+
+          .links-adaptive {
+            display: flex;
+            flex-direction: column;
+
+            .first-links {
+              display: flex;
+              justify-content: space-between;
+            }
+
+            .second-links {
+              margin-top: 20px;
+              display: flex;
+              justify-content: space-around;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .App {
+    .content {
+      .section-5 {
+        .adaptive-numbers {
+          .presale {
+            position: relative;
+            bottom: 300px;
+          }
+
+          .marketing {
+            width: 60px;
+            position: relative;
+            bottom: 320px;
+            left: 423px;
+          }
+
+          .team {
+            width: 60px;
+            position: relative;
+            bottom: 170px;
+            left: 390px
+          }
+
+          .locked {
+            width: 60px;
+            position: relative;
+            bottom: 140px;
+            left: 250px;
+          }
+
+          .num-1 {
+            width: 60px;
+            position: relative;
+            bottom: 225px;
+            left: 100px;
+          }
+
+          .num-2 {
+            width: 50px;
+            position: relative;
+            bottom: 250px;
+            left: 170px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 512px) {
+  .App {
+    .App-header {
+      .title {
+        .title-items {
+          .title-text {
+            .text {
+              span {
+                text-align: center;
+              }
+            }
+          }
+        }
+      }
+    }
+    .content {
+      .description {
+        .description-pictures {
+          .description-items {
+            .switch {
+              position: relative;
+              left: 20px;
+            }
+
+            .gif {
+              position: relative;
+              left: -80px;
+            }
+          }
+        }
+      }
+      .section-2 {
+        .section-2-items {
+          .items {
+            .info {
+              .info2 {
+                .info2-title {
+                  text-align: center;
+                }
+              }
+            }
+          }
+        }
+        .split-pictures {
+          width: 400px;
+        }
+      }
+
+      .section-3 {
+        padding-top: 100px;
+        .sections-3-items {
+          h1 {
+            font-size: 40px;
+          }
+        }
+      }
+
+      .section-4 {
+        .s-4-items {
+          .install-block {
+            .install {
+              .install-items {
+                .install-title-adaptive {
+                  font-size: 45px;
+                }
+                .install-text {
+                  font-size: 20px;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .section-5 {
+        .adaptive-numbers {
+          span {
+            font-size: 24px;
+          }
+
+          .presale {
+            position: relative;
+            bottom: 300px;
+          }
+
+          .marketing {
+            width: 50px;
+            position: relative;
+            bottom: 300px;
+            left: 370px;
+          }
+
+          .team {
+            width: 50px;
+            position: relative;
+            bottom: 170px;
+            left: 360px
+          }
+
+          .locked {
+            width: 50px;
+            position: relative;
+            bottom: 120px;
+            left: 220px;
+          }
+
+          .num-1 {
+            width: 50px;
+            position: relative;
+            bottom: 170px;
+            left: 70px;
+          }
+
+          .num-2 {
+            width: 50px;
+            position: relative;
+            bottom: 180px;
+            left: 130px;
+          }
+        }
+      }
+      .section-8 {
+        .s8-items {
+          .items-title {
+            font-size: 40px;
+          }
+          .items-text {
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 442px){
+  .App {
+    .App-header {
+      .head {
+        .logotype {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+      }
+    }
+    .content {
+      .description {
+        .description-pictures {
+          width: 10px;
+          position: relative;
+          left: 180px;
+
+          .description-items {
+            .switch {
+              position: relative;
+              top: 270px;
+              left: -200px
+            }
+
+            .gif {
+              position: relative;
+              margin-left: auto;
+              margin-right: auto;
+            }
+          }
+        }
+      }
+
+      .section-2 {
+        .split-pictures {
+          width: 300px;
+          position: relative;
+          bottom: 200px;
+        }
+      }
+
+      .section-5 {
+        .adaptive-numbers {
+          .presale {
+            position: relative;
+            bottom: 250px;
+          }
+
+          .marketing {
+            width: 50px;
+            position: relative;
+            bottom: 260px;
+            left: 335px;
+          }
+
+          .team {
+            width: 50px;
+            position: relative;
+            bottom: 130px;
+            left: 310px
+          }
+
+          .locked {
+            width: 50px;
+            position: relative;
+            bottom: 110px;
+            left: 210px;
+          }
+
+          .num-1 {
+            width: 50px;
+            position: relative;
+            bottom: 170px;
+            left: 70px;
+          }
+
+          .num-2 {
+            width: 50px;
+            position: relative;
+            bottom: 180px;
+            left: 130px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 432px) {
+  .App {
+    .content {
+      .description {
+        .description-pictures {
+          .gif {
+            position: relative;
+            width: 200px;
+            margin-top: 50px;
+          }
+
+          .switch {
+            width: 170px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 398px){
+  .App {
+    .content {
+      .section-5 {
+        .adaptive-numbers {
+          .presale {
+            position: relative;
+            bottom: 250px;
+          }
+
+          .marketing {
+            width: 50px;
+            position: relative;
+            bottom: 260px;
+            left: 290px;
+          }
+
+          .team {
+            width: 50px;
+            position: relative;
+            bottom: 130px;
+            left: 290px
+          }
+
+          .locked {
+            width: 50px;
+            position: relative;
+            bottom: 110px;
+            left: 190px;
+          }
+
+          .num-1 {
+            width: 50px;
+            position: relative;
+            bottom: 180px;
+            left: 70px;
+          }
+
+          .num-2 {
+            width: 50px;
+            position: relative;
+            bottom: 180px;
+            left: 100px;
+          }
+        }
+        .diagram-info {
+          .info-description {
+            img {
+              width: 100%;
+            }
+          }
+        }
+      }
+      .section-4 {
+        .s-4-items {
+          .install-block {
+            .install {
+              padding-bottom: 150px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 383px) {
+  .App {
+    .content {
+      .description {
+        .description-pictures {
+          .gif {
+            width: 180px;
+          }
+        }
+      }
+    }
+  }
+}
