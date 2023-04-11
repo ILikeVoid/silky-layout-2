@@ -319,15 +319,15 @@ function App() {
                             <div className="pictures">
                                 <div className="dog-head">
                                     <img src={dogHead} alt="dogHead"/>
-                                    <span><span>add liquidity to pancakeswap</span><span>SLK-BNB</span></span>
+                                    {/*<span><span>add liquidity to pancakeswap</span><span>SLK-BNB</span></span>*/}
                                 </div>
                                 <div><img className="air-event d-block" src={airEvent} alt="airEvent"/></div>
                             </div>
-                            <div className="btn">
-                                <a href="https://pancakeswap.finance/add/BNB/0x0E09FaBB73Bd3Ade0a17ECC321fD13a19e81cE82/2500?minPrice=56.037925&maxPrice=163.576530">
-                                    <button>LIQUIDITY</button>
-                                </a>
-                            </div>
+                            {/*<div className="btn">*/}
+                            {/*    <a href="https://pancakeswap.finance/add/BNB/0x0E09FaBB73Bd3Ade0a17ECC321fD13a19e81cE82/2500?minPrice=56.037925&maxPrice=163.576530">*/}
+                            {/*        <button>LIQUIDITY</button>*/}
+                            {/*    </a>*/}
+                            {/*</div>*/}
                         </div>
                     </div>
                 </div>
