@@ -30,12 +30,24 @@
 
       .nav {
         display: flex;
-        gap: 28px;
 
-        span {
+        a {
           font-family: 'Comfortaa', cursive;
           font-size: 0.875rem;
           text-transform: uppercase;
+          cursor: pointer;
+          width: 130px;
+          height: 40px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-radius: 10px;
+          text-decoration: none;
+          color: black;
+
+          &:hover {
+            background: #F2C067;
+          }
         }
       }
     }
@@ -93,28 +105,21 @@
           margin-top: 75px;
           display: flex;
           align-items: center;
+          gap: 30px;
+
 
           button {
             font-family: 'Comfortaa', cursive;
-            font-weight: 500;
             background: #F2C067;
             border-radius: 90px;
             border: none;
             height: 50px;
             width: 300px;
-          }
+            text-decoration: none;
+            transition: 0.3s;
 
-          .telegram {
-            margin-left: 2.5rem;
-
-            img {
-              cursor: pointer;
-            }
-
-            span {
-              margin-left: 1.375rem;
-              text-transform: uppercase;
-              font-family: 'Comfortaa', cursive;
+            &:hover {
+              background: #c88d21;
             }
           }
         }
@@ -131,8 +136,11 @@
         position: relative;
         bottom: 530px;
         float: right;
+        height: 20px;
 
         .description-items {
+          height: 20px;
+
           .switch {
             position: relative;
             top: 190px;
@@ -140,6 +148,8 @@
           }
 
           .gif {
+            border: aliceblue 10px solid;
+            border-radius: 12px;
             position: relative;
             top: 120px;
             left: 390px
@@ -212,7 +222,7 @@
 
       .split-pictures {
         position: relative;
-        bottom: 280px;
+        bottom: 380px;
       }
     }
 
@@ -385,9 +395,14 @@
                   justify-content: center;
                   align-items: center;
                   background: white;
+                  transition: 0.3s;
 
                   span {
                     margin-left: 10px;
+                  }
+
+                  &:hover {
+                    background: silver;
                   }
                 }
               }
@@ -428,6 +443,7 @@
       }
 
       .diagram-numbers {
+        height: 100px;
         .presale {
           width: 300px;
           position: relative;
@@ -490,7 +506,6 @@
       }
 
       .diagram-info {
-        margin-top: 200px;
 
         .info-description {
           display: flex;
@@ -586,7 +601,7 @@
         .partners-items {
           margin-top: 70px;
 
-          span {
+          a {
             background: #767779;
             height: 80px;
             width: 360px;
@@ -678,6 +693,11 @@
             border-radius: 90px;
             font-family: 'Comfortaa', cursive;
             border: none;
+            transition: 0.3s;
+
+            &:hover {
+              background: #767779;
+            }
           }
         }
       }
@@ -720,6 +740,11 @@
           height: 55px;
           width: 250px;
           border-radius: 6px;
+          transition: 0.3s;
+
+          &:hover {
+            background: silver;
+          }
 
 
           img {
@@ -767,10 +792,10 @@
       }
 
       .video-block {
-        margin-top: 100px;
-        margin-bottom: 100px;
+        margin: 100px 8%;
 
         iframe {
+          width: 100%;
           border-radius: 20px;
         }
       }
@@ -808,7 +833,7 @@
       }
 
       .links {
-        width: 60%;
+        width: 50%;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -833,14 +858,22 @@
 
 @media screen and (max-width: 1400px) {
   .App {
+    .App-header {
+      .head {
+        .nav {
+          a {
+            width: 110px;
+          }
+        }
+      }
+    }
     .content {
       .section-5 {
         background-position: center;
         background-size: cover;
 
         .diagram-numbers {
-          .presale {
-          }
+          height: auto;
 
           .marketing {
             position: relative;
@@ -940,6 +973,7 @@
                   width: 300px;
                   margin-left: auto;
                   margin-right: auto;
+                  margin-top: 100px;
 
                   .play-text {
                     margin-top: 10px;
@@ -965,7 +999,7 @@
 
     .content {
       position: relative;
-      bottom: 20px;
+      top: 100px;
 
       .description {
         .description-pictures {
@@ -1215,6 +1249,25 @@
           }
         }
       }
+      .section-10 {
+        margin-top: 200px;
+        margin-bottom: 200px;
+
+        h1 {
+          font-family: 'Poppins', sans-serif;
+          text-transform: uppercase;
+        }
+
+        .video-block {
+          margin: 100px 8%;
+
+          iframe {
+            height: 400px;
+            width: 100%;
+            border-radius: 20px;
+          }
+        }
+      }
     }
   }
 }
@@ -1261,6 +1314,8 @@
     }
 
     .content {
+      position: relative;
+      top: 20px;
       .description {
         .description-pictures {
           position: relative;
@@ -1317,14 +1372,18 @@
             }
           }
         }
-
-        .split-pictures {
-
-        }
       }
 
       .section-3 {
         .sections-3-items {
+          .line {
+            .q-numbers {
+              display: flex;
+              justify-content: center;
+              gap: 20%;
+            }
+          }
+
           .questions {
             .card {
               width: 250px;
@@ -1488,7 +1547,7 @@
           .num-2 {
             width: 50px;
             position: relative;
-            bottom: 250px;
+            bottom: 200px;
             left: 210px;
           }
 
@@ -1809,6 +1868,7 @@
                 margin-top: 40px;
 
                 .play {
+                  margin-top: 0;
                   img {
                     width: 100px;
                   }
@@ -1827,10 +1887,16 @@
             flex-direction: column;
             justify-content: center;
 
-            button {
+            a {
+              display: flex;
+              justify-content: center;
               width: 100%;
-              height: 100px;
-              font-size: 32px;
+              text-decoration: none;
+              button {
+                width: 100%;
+                height: 100px;
+                font-size: 16px;
+              }
             }
 
             .telegram {
@@ -1868,6 +1934,10 @@
               text-align: center;
             }
           }
+        }
+        .split-pictures {
+          position: relative;
+          bottom: 300px;
         }
       }
 
@@ -1910,7 +1980,7 @@
           .num-2 {
             width: 50px;
             position: relative;
-            bottom: 250px;
+            bottom: 200px;
             left: 170px;
           }
         }
@@ -1920,6 +1990,20 @@
         .partners {
           h1 {
             font-size: 40px;
+          }
+        }
+      }
+      .section-10 {
+        margin-top: 100px;
+        margin-bottom: 100px;
+
+        .video-block {
+          margin: 50px 8%;
+
+          iframe {
+            height: 300px;
+            width: 100%;
+            border-radius: 20px;
           }
         }
       }
@@ -1980,7 +2064,7 @@
           .num-2 {
             width: 50px;
             position: relative;
-            bottom: 250px;
+            bottom: 200px;
             left: 170px;
           }
         }
@@ -2017,16 +2101,18 @@
           .links-adaptive {
             display: flex;
             flex-direction: column;
+            gap: 40px;
 
             .first-links {
+              gap: 80px;
               display: flex;
-              justify-content: space-between;
+              justify-content: center;
             }
 
             .second-links {
-              margin-top: 20px;
               display: flex;
-              justify-content: space-around;
+              justify-content: center;
+              gap: 80px;
             }
           }
         }
@@ -2038,6 +2124,12 @@
 @media screen and (max-width: 550px) {
   .App {
     .content {
+      .section-2 {
+        .split-pictures {
+          position: relative;
+          bottom: 350px;
+        }
+      }
       .section-5 {
         .adaptive-numbers {
           .presale {
@@ -2076,9 +2168,22 @@
           .num-2 {
             width: 50px;
             position: relative;
-            bottom: 250px;
+            bottom: 200px;
             left: 170px;
           }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 517px) and (min-width: 513px){
+  .App {
+    .content {
+      .section-2 {
+        .split-pictures {
+          position: relative;
+          bottom: 400px;
         }
       }
     }
@@ -2129,13 +2234,20 @@
           }
         }
         .split-pictures {
-          width: 400px;
+          width: 100%;
         }
       }
 
       .section-3 {
         padding-top: 100px;
         .sections-3-items {
+          .line {
+            .q-numbers {
+              display: flex;
+              justify-content: space-around;
+              gap: 15px;
+            }
+          }
           h1 {
             font-size: 40px;
           }
@@ -2174,21 +2286,21 @@
             width: 50px;
             position: relative;
             bottom: 300px;
-            left: 370px;
+            left: 410px;
           }
 
           .team {
             width: 50px;
             position: relative;
-            bottom: 170px;
-            left: 360px
+            bottom: 150px;
+            left: 380px
           }
 
           .locked {
             width: 50px;
             position: relative;
             bottom: 120px;
-            left: 220px;
+            left: 250px;
           }
 
           .num-1 {
@@ -2201,8 +2313,8 @@
           .num-2 {
             width: 50px;
             position: relative;
-            bottom: 180px;
-            left: 130px;
+            bottom: 190px;
+            left: 100px;
           }
         }
       }
@@ -2213,6 +2325,47 @@
           }
           .items-text {
             font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 551px) and (min-width: 528px){
+  .App {
+    .content {
+      .section-2 {
+        .split-pictures {
+          position: relative;
+          bottom: 300px
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 517px) and (min-width: 517px){
+  .App {
+    .content {
+      .section-2 {
+        .split-pictures {
+          position: relative;
+          bottom: 330px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 473px) {
+  .App {
+    .content {
+      .section-5 {
+        .adaptive-numbers {
+          .marketing {
+            position: relative;
+            left: 380px;
           }
         }
       }
@@ -2273,7 +2426,7 @@
             width: 50px;
             position: relative;
             bottom: 260px;
-            left: 335px;
+            left: 350px;
           }
 
           .team {
@@ -2301,7 +2454,7 @@
             width: 50px;
             position: relative;
             bottom: 180px;
-            left: 130px;
+            left: 80px;
           }
         }
       }
@@ -2325,6 +2478,14 @@
           }
         }
       }
+      .section-5 {
+        .adaptive-numbers {
+          .marketing {
+            position: relative;
+            left: 330px
+          }
+        }
+      }
     }
   }
 }
@@ -2343,7 +2504,7 @@
             width: 50px;
             position: relative;
             bottom: 260px;
-            left: 290px;
+            left: 310px;
           }
 
           .team {
@@ -2371,7 +2532,7 @@
             width: 50px;
             position: relative;
             bottom: 180px;
-            left: 100px;
+            left: 80px;
           }
         }
         .diagram-info {
@@ -2402,6 +2563,19 @@
         .description-pictures {
           .gif {
             width: 180px;
+          }
+        }
+      }
+      .section-5 {
+        .adaptive-numbers {
+          .marketing {
+            position: relative;
+            left: 270px;
+          }
+
+          .num-2 {
+            left: 65px;
+            bottom: 180px;
           }
         }
       }

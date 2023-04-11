@@ -3,10 +3,9 @@ import './App.scss';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {roadMapItems} from "./roadMapItems/RoadMapItems"
 import YouTube from "react-youtube";
-import TelegramImg from "./assets/img/logos_telegram.png"
 import play from "./assets/img/Play-video-img.png"
 import dogs from "./assets/img/dogs.png"
-import gif from "./assets/img/gif-img.png"
+import gif from "./assets/video/game.gif"
 import switchImg from "./assets/img/switch.png"
 import Rectangle from "./assets/img/Rectangle.png"
 import dog from "./assets/img/section3-dog.png"
@@ -41,14 +40,12 @@ import team_img8 from "./assets/img/project-team/Group 42.jpg"
 import twitter from "./assets/img/footer/twitter.png"
 import telegram from "./assets/img/footer/telegram.png"
 import discord from "./assets/img/footer/ds.png"
-import reddit from "./assets/img/footer/reddit.png"
-import tikTok from "./assets/img/footer/tik-tok.png"
-import facebook from "./assets/img/footer/facebook.png"
 import email from "./assets/img/footer/email.png"
 import logoText from "./assets/img/logo-text.png"
 import widthSplitLine from "./assets/img/width-line.png"
 
 function App() {
+
     return (
         <div className="App">
             <header className="App-header">
@@ -59,12 +56,12 @@ function App() {
                             <img src={logoText} alt="logo"/>
                         </div>
                         <div className="nav">
-                            <span>contract</span>
-                            <span>pancakeswap</span>
-                            <span>dextools</span>
-                            <span>unicrypt</span>
-                            <span>whitepaper</span>
-                            <span>kyc & audit</span>
+                            <a href="https://bscscan.com/token/0xcba27d7abedb5e8cc171658dc0efe829649478e3">Contract</a>
+                            <a href="#">GAME</a>
+                            <a href="https://poocoin.app/tokens/0xcba27d7abedb5e8cc171658dc0efe829649478e3">poocoin</a>
+                            <a href="https://app.uncx.network/amm/pancake-v2/pair/0x21D4fFe97D3806ba70eDd4f3Dd055BC10Cfa3562">unicrypt</a>
+                            <a href="#">whitepaper</a>
+                            <a href="#">NFT</a>
                         </div>
                     </div>
                     <div className="title">
@@ -73,7 +70,11 @@ function App() {
                                 <div className="text">
                                     <div className="title-head">
                                         <div className="play">
-                                            <img src={play} alt="play"/>
+                                            <img src={play} alt="play"
+                                                 onClick={(e) => {
+                                                     e.preventDefault()
+                                                     window.location.href = "https://www.youtube.com/watch?v=G2Br6wiJ198"
+                                                 }}/>
                                             <div className="play-text">watching video about Silky Inu</div>
                                         </div>
                                         <h1>WELCOME TO SILKY INU</h1>
@@ -83,11 +84,12 @@ function App() {
                             </div>
                             <img className="dogs" src={dogs} alt="dogs"/>
                             <div className="title-options">
-                                <button>Claim NFT</button>
-                                <div className="telegram">
-                                    <img src={TelegramImg} alt="telegram"/>
-                                    <span>telegram</span>
-                                </div>
+                                <a href="https://pancakeswap.finance/swap?outputCurrency=0xcba27D7abEdB5E8cc171658dC0eFE829649478e3&chainId=56">
+                                    <button>BUY ON PANCAKESWAP</button>
+                                </a>
+                                <a href="#">
+                                    <button>NFT coming soon</button>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -139,10 +141,10 @@ function App() {
                             <h1>roadmap of silky: </h1>
                             <div className="line">
                                 <div className="q-numbers">
-                                    <span>Q1</span>
-                                    <span>Q2</span>
-                                    <span>Q3</span>
-                                    <span>Q4</span>
+                                    <span>Phase 1</span>
+                                    <span>Phase 2</span>
+                                    <span>Phase 3</span>
+                                    <span>Phase 4</span>
                                 </div>
                                 <img src={questionsLine} alt="line"/>
                             </div>
@@ -204,8 +206,18 @@ function App() {
                                         <span className="install-title">Start installation now</span>
                                         <span className="install-text">Download TRUST WALLET</span>
                                         <div className="links">
-                                            <button><img src={appStore} alt="app-store"/><span>App Store</span></button>
-                                            <button><img src={googlePlay} alt="app-store"/></button>
+                                            <button onClick={(e) => {
+                                                e.preventDefault()
+                                                window.location.href = "https://apps.apple.com/app/apple-store/id1288339409?mt=8"
+                                            }}>
+                                                <img src={appStore} alt="app-store"/>
+                                                <span>App Store</span></button>
+                                            <button onClick={(e) => {
+                                                e.preventDefault()
+                                                window.location.href = "https://play.google.com/store/apps/details?id=com.wallet.crypto.trustapp&referrer=utm_source%3Dwebsite&pli=1"
+                                            }}>
+                                                <img src={googlePlay} alt="app-store"/>
+                                            </button>
                                         </div>
                                     </div>
                                     <img className="phone" src={phone} alt="iphone"/>
@@ -223,8 +235,7 @@ function App() {
                             <span className="marketing">20%</span>
                             <span className="team">15%</span>
                             <span className="locked">10%</span>
-                            <span className="num-1">3%</span>
-                            <span className="num-2">7%</span>
+                            <span className="num-2">8%</span>
                         </div>
                         <div className="diagram-numbers">
                             <div className="presale">
@@ -243,18 +254,15 @@ function App() {
                                 <span className="numbers-title">Locked</span>
                                 <span>10%</span>
                             </div>
-                            <div className="num-1">
-                                <span>3%</span>
-                            </div>
                             <div className="num-2">
-                                <span>7%</span>
+                                <span>8%</span>
                             </div>
                         </div>
                         <div className="diagram-info">
                             <div className="info-description">
                                 <div className="description">
                                     <span className="description-title">Fees & Redistribution</span>
-                                    <span className="info-title">7% BURN & 3% aIRDROP</span>
+                                    <span className="info-title">8% BURN</span>
                                     <span className="info-text">4% of the tokens will be automatically
                                         burned and 4% of the <br/>tokenswill be distributed to
                                         the holders at each purchase.
@@ -289,15 +297,15 @@ function App() {
                             <h1>exchanges & partners of silky inu</h1>
                             <div className="partners-items">
                                 <div className="top-partners">
-                                    <span><img src={coinMarket} alt="coinMarket"/></span>
-                                    <span><img src={gecko} alt="gecko"/></span>
-                                    <span><img src={pancake} alt="pancake"/></span>
+                                    <a href="#"><img src={coinMarket} alt="coinMarket"/></a>
+                                    <a href="#"><img src={gecko} alt="gecko"/></a>
+                                    <a href="https://pancakeswap.finance/"><img src={pancake} alt="pancake"/></a>
                                 </div>
                                 <div className="bot-partners">
-                                    <span><img src={trust} alt="trust"/></span>
-                                    <span><img src={bnb} alt="bnb"/></span>
-                                    <span><img src={pooCoin} alt="pooCoin"/></span>
-                                    <span><img src={dext} alt="dext"/></span>
+                                    <a href="https://trustwallet.com/"><img src={trust} alt="trust"/></a>
+                                    <a href="https://www.binance.com/"><img src={bnb} alt="bnb"/></a>
+                                    <a href="https://poocoin.app/"><img src={pooCoin} alt="pooCoin"/></a>
+                                    <a href="https://www.dextools.io/"><img src={dext} alt="dext"/></a>
                                 </div>
                             </div>
                         </div>
@@ -309,19 +317,20 @@ function App() {
                             <div className="title">
                                 <div className="logo">
                                     <span className="title-text">AIR EVENT</span>
-                                    <span>LIVE NOW</span>
+                                    <span>COMING SOON</span>
                                 </div>
-                                <span className="date">1 september - 1 november</span>
                             </div>
                             <div className="pictures">
                                 <div className="dog-head">
                                     <img src={dogHead} alt="dogHead"/>
-                                    <span><span>add liquidity to pancakeswap</span><span>SLK-BNB and participate in<span>AIRDROP</span></span></span>
+                                    <span><span>add liquidity to pancakeswap</span><span>SLK-BNB</span></span>
                                 </div>
                                 <div><img className="air-event d-block" src={airEvent} alt="airEvent"/></div>
                             </div>
                             <div className="btn">
-                                <button>Claim NFT</button>
+                                <a href="https://pancakeswap.finance/add/BNB/0x0E09FaBB73Bd3Ade0a17ECC321fD13a19e81cE82/2500?minPrice=56.037925&maxPrice=163.576530">
+                                    <button>LIQUIDITY</button>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -333,7 +342,13 @@ function App() {
                             <span className="items-title"><span>Download</span><span>the PDF file</span></span>
                             <span
                                 className="items-text"><span>With the full Silky-Inu-</span><span>BSC-Audit</span></span>
-                            <button><img src={pdf} alt="pdf"/>Download</button>
+                            <button onClick={(e) => {
+                                e.preventDefault()
+                                window.location.href = "https://dessertswap.finance/audits/Silky-Inu-BSC-Audit-20556617.pdf"
+                            }}>
+                                <img src={pdf} alt="pdf"/>
+                                Download
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -368,10 +383,10 @@ function App() {
                     <div className="container">
                         <h1>Watching video </h1>
                         <div className="video-block">
-                            <YouTube videoId="FM7MFYoylVs"
+                            <YouTube videoId="G2Br6wiJ198"
                                      opts={{
-                                         height: '621px',
-                                         width: '100%',
+                                         height: '600px',
+                                         width: '90%',
                                      }}/>
                         </div>
                     </div>
@@ -392,22 +407,16 @@ function App() {
                                 <a href="https://twitter.com/silkyinu"><img src={twitter} alt="link"/></a>
                                 <a href="https://t.me/silkyinu"><img src={telegram} alt="link"/></a>
                                 <a href="https://discord.gg/Xpe5pUH7"><img src={discord} alt="link"/></a>
-                                <a href="https://reddit.com/r/silkyinu"><img src={reddit} alt="link"/></a>
-                                <a href="https://tiktok.com/@silkyinu"><img src={tikTok} alt="link"/></a>
-                                <a href="https://www.facebook.com/people/Silky-Inu/100084480724789/"><img src={facebook} alt="link"/></a>
-                                <a><img src={email} alt="link"/></a>
+                                <a href="#"><img src={email} alt="link"/></a>
                             </div>
                             <div className="links-adaptive">
                                 <div className="first-links">
-                                    <div><img src={twitter} alt="link"/></div>
-                                    <div><img src={telegram} alt="link"/></div>
-                                    <div><img src={discord} alt="link"/></div>
-                                    <div><img src={reddit} alt="link"/></div>
+                                    <a href="https://twitter.com/silkyinu"><img src={twitter} alt="link"/></a>
+                                    <a href="https://t.me/silkyinu"><img src={telegram} alt="link"/></a>
                                 </div>
                                 <div className="second-links">
-                                    <div><img src={tikTok} alt="link"/></div>
-                                    <div><img src={facebook} alt="link"/></div>
-                                    <div><img src={email} alt="link"/></div>
+                                    <a href="https://discord.gg/Xpe5pUH7"><img src={discord} alt="link"/></a>
+                                    <a href="#"><img src={email} alt="link"/></a>
                                 </div>
                             </div>
                         </div>
