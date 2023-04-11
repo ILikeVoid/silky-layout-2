@@ -70,11 +70,7 @@ function App() {
                                 <div className="text">
                                     <div className="title-head">
                                         <div className="play">
-                                            <img src={play} alt="play"
-                                                 onClick={(e) => {
-                                                     e.preventDefault()
-                                                     window.location.href = "https://www.youtube.com/watch?v=G2Br6wiJ198"
-                                                 }}/>
+                                            <a href="https://www.youtube.com/watch?v=G2Br6wiJ198"><img src={play} alt="play"/></a>
                                             <div className="play-text">watching video about Silky Inu</div>
                                         </div>
                                         <h1>WELCOME TO SILKY INU</h1>
