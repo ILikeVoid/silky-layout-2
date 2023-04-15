@@ -2,7 +2,53 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Poppins:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
 
+
 .App {
+  display: grid;
+}
+
+  .adaptive-nav {
+    transition: 0.3s;
+    width: 30%;
+    background: #58575C;
+    position: fixed;
+    height: 100%;
+    top: 0;
+    right: 0;
+    box-shadow: 0 3px 12px -4px rgb(0 0 0 / 70%);
+
+    img {
+      margin-top: 10px;
+      margin-left: 10px;
+      width: 100px;
+      transition: 0.3s;
+    }
+
+    .adaptive-links {
+      transition: 0.3s;
+      margin-top: 20px;
+      a {
+        margin-top: 30px;
+        padding-left: 40px;
+        display: block;
+        font-size: 2rem;
+        text-transform: uppercase;
+        font-family: 'Poppins', sans-serif;
+        cursor: pointer;
+        border-radius: 10px;
+        text-decoration: none;
+        color: white;
+        transition: 0.3s;
+
+        &:hover {
+          background: #c88d21;
+        }
+      }
+    }
+  }
+
+.App-wrapper {
+
 
   .App-header {
     display: flex;
@@ -25,6 +71,18 @@
 
         .dog-head {
           width: 150px;
+        }
+      }
+
+      .menu {
+        position: absolute;
+        top: 35px;
+        display: none;
+
+
+        img {
+          width: 40px;
+          cursor: pointer;
         }
       }
 
@@ -952,6 +1010,16 @@
         .nav {
           display: none;
         }
+
+        .menu {
+          width: 80%;
+          display: flex;
+          justify-content: flex-end;
+
+          img {
+            width: 80px;
+          }
+        }
       }
 
       .title {
@@ -1297,6 +1365,18 @@
 
 @media screen and (max-width: 992px) {
   .App {
+    .adaptive-nav {
+      width: 40%;
+      img {
+        width: 80px;
+      }
+
+      .adaptive-links {
+        a {
+          font-size: 2rem;
+        }
+      }
+    }
     .App-header {
       .title {
         .title-items {
@@ -1855,6 +1935,20 @@
 
 @media screen and (max-width: 768px) {
   .App {
+
+
+    .adaptive-nav {
+      img {
+        width: 80px;
+      }
+
+      .adaptive-links {
+        a {
+          font-size: 1.6rem;
+        }
+      }
+    }
+
     .App-header {
       background-size: cover;
       background-position: center;
@@ -1862,6 +1956,11 @@
 
       .head {
         height: auto;
+
+        .menu {
+          position: initial;
+          width: initial;
+        }
       }
 
       .title {
@@ -2022,6 +2121,19 @@
 
 @media screen and (max-width: 576px) {
   .App {
+    .adaptive-nav {
+      width: 50%;
+      img {
+        width: 80px;
+      }
+
+      .adaptive-links {
+        a {
+          font-size: 1.5rem;
+        }
+      }
+    }
+
     .content {
       .section-3 {
         .sections-3-items {
@@ -2384,6 +2496,18 @@
 
 @media screen and (max-width: 442px){
   .App {
+    .adaptive-nav {
+      img {
+        width: 80px;
+      }
+
+      .adaptive-links {
+        a {
+          font-size: 1.2rem;
+        }
+      }
+    }
+
     .App-header {
       .head {
         .logotype {
