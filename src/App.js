@@ -45,6 +45,12 @@ import logoText from "./assets/img/logo-text.png"
 import widthSplitLine from "./assets/img/width-line.png"
 import menuImg from "./assets/img/menu-panel.png"
 import closeIcon from "./assets/img/close-icon.png"
+import nft1 from "./assets/img/nft/nft-1.png"
+import nft2 from "./assets/img/nft/nft-2.png"
+import nft3 from "./assets/img/nft/nft-3.png"
+import nft4 from "./assets/img/nft/nft-4.png"
+import nft5 from "./assets/img/nft/nft-5.png"
+import nftRepeat from "./assets/img/nft/nft-reapit.png"
 
 
 function App() {
@@ -114,6 +120,36 @@ function App() {
                             </div>
                         </div>
                     </div>
+                    <div className="section-1">
+                        <div className="container">
+                            <div className="s-1-title">
+                                <h1 className="title">CLAIM NFT </h1>
+                                <h1 className="total">in total - 5 555 NFT</h1>
+                            </div>
+                            <div className="info-blocks">
+                                <span className="big-block"><b>1000 NFT</b> - white list collaboration &marketing</span>
+                                <span className="small-block"><b>500 NFT</b> - Free mint</span>
+                                <span className="small-block"><b>3500 NFT</b> - mint</span>
+                                <span className="big-block"><b>555 NFT</b> - collections donation from sales to dog shelters</span>
+                            </div>
+                            <div className="nft-pictures">
+                                <div className="first-row">
+                                    <img src={nft1} alt="nft"/>
+                                    <img src={nft2} alt="nft"/>
+                                    <img src={nft3} alt="nft"/>
+                                    <img src={nft4} alt="nft"/>
+                                </div>
+                                <div className="second-row">
+                                    <img src={nftRepeat} alt="nft"/>
+                                    <img src={nft5} alt="nft"/>
+                                    <img className="gg-pictures" src={nftRepeat} alt="nft"/>
+                                </div>
+                            </div>
+                            <div className="d-flex justify-content-center align-content">
+                                <button>Opensea</button>
+                            </div>
+                        </div>
+                    </div>
                     <div className="section-2">
                         <div className="section-2-items">
                             <div className="container">
@@ -127,12 +163,14 @@ function App() {
                                         <div className="info2">
                                             <span className="info2-title">whats is silky inu?</span>
                                             <span className="info2-description">
-                                            <span>Silky is an decentralized deflationary token </span>
-                                            <span>aiming to revolutionize Defi to allow free </span>
-                                            <span>trading and the safest. SILKY isthe</span>
-                                            <span>embodiment of community financical</span>
-                                            <span>freedom. The SILKY community intends to</span>
-                                            <span>appear on the moon.</span>
+                                                SILKY is a collection of 5555 NFTs that has a rich,
+                                                diverse and unique pool of rearitional foundations.
+                                                Each SILKY interacts with the SILKY game, where each user
+                                                plays and is rewarded in SLK SILKY tokens - the DFI MEME NFT
+                                                GAME Game Revolution, an NFT revolution designed to enable free
+                                                trading and make it as safe as possible.
+                                                <br/><br/>
+                                                SILKY is the epitome of community financial freedom.
                                         </span>
                                         </div>
                                     </div>

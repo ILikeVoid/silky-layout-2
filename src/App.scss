@@ -7,45 +7,46 @@
   display: grid;
 }
 
-  .adaptive-nav {
+.adaptive-nav {
+  transition: 0.3s;
+  width: 30%;
+  background: #58575C;
+  position: fixed;
+  height: 100%;
+  top: 0;
+  right: 0;
+  box-shadow: 0 3px 12px -4px rgb(0 0 0 / 70%);
+
+  img {
+    margin-top: 10px;
+    margin-left: 10px;
+    width: 100px;
     transition: 0.3s;
-    width: 30%;
-    background: #58575C;
-    position: fixed;
-    height: 100%;
-    top: 0;
-    right: 0;
-    box-shadow: 0 3px 12px -4px rgb(0 0 0 / 70%);
+  }
 
-    img {
-      margin-top: 10px;
-      margin-left: 10px;
-      width: 100px;
+  .adaptive-links {
+    transition: 0.3s;
+    margin-top: 20px;
+
+    a {
+      margin-top: 30px;
+      padding-left: 40px;
+      display: block;
+      font-size: 2rem;
+      text-transform: uppercase;
+      font-family: 'Poppins', sans-serif;
+      cursor: pointer;
+      border-radius: 10px;
+      text-decoration: none;
+      color: white;
       transition: 0.3s;
-    }
 
-    .adaptive-links {
-      transition: 0.3s;
-      margin-top: 20px;
-      a {
-        margin-top: 30px;
-        padding-left: 40px;
-        display: block;
-        font-size: 2rem;
-        text-transform: uppercase;
-        font-family: 'Poppins', sans-serif;
-        cursor: pointer;
-        border-radius: 10px;
-        text-decoration: none;
-        color: white;
-        transition: 0.3s;
-
-        &:hover {
-          background: #c88d21;
-        }
+      &:hover {
+        background: #c88d21;
       }
     }
   }
+}
 
 .App-wrapper {
 
@@ -223,6 +224,90 @@
       .description-rectangle {
         img {
           width: 100%;
+        }
+      }
+    }
+
+    .section-1 {
+      margin-top: 20px;
+      width: 100%;
+      margin-bottom: 100px;
+
+      .s-1-title {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+
+        .total {
+          color: #F2C067;
+        }
+
+        h1 {
+          font-family: 'Poppins', sans-serif;
+          font-size: 2.5rem;
+          text-transform: uppercase;
+          letter-spacing: 0.105em;
+        }
+      }
+
+      .info-blocks {
+        margin-top: 46px;
+        display: flex;
+        justify-content: space-between;
+        gap: 28px;
+
+        span {
+          font-family: 'Comfortaa', cursive;
+          font-size: 1.5rem;
+          text-align: center;
+          border-radius: 20px;
+          padding: 20px 20px;
+          letter-spacing: 0.105em;
+        }
+
+        .big-block {
+          width: 30%;
+          box-shadow: 0 0 30px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .small-block {
+          width: 20%;
+          box-shadow: 0 0 30px 15px rgba(0, 0, 0, 0.1);
+        }
+      }
+
+      .nft-pictures {
+        margin-top: 40px;
+
+        .first-row {
+          width: 100%;
+          display: flex;
+          justify-content: space-between;
+        }
+
+        .second-row {
+          width: 100%;
+          display: flex;
+          justify-content: center;
+        }
+
+        img {
+          width: 320px;
+        }
+      }
+
+      button {
+        width: 300px;
+        height: 50px;
+        background: #F2C067;
+        font-family: 'Comfortaa', cursive;
+        border: none;
+        border-radius: 90px;
+        font-size: 20px;
+        transition: 0.3s;
+
+        &:hover {
+          background: #c88d21;
         }
       }
     }
@@ -507,6 +592,7 @@
 
       .diagram-numbers {
         height: 100px;
+
         .presale {
           width: 300px;
           position: relative;
@@ -931,7 +1017,23 @@
         }
       }
     }
+
     .content {
+      .section-1 {
+        .nft-pictures {
+          .second-row {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+          }
+
+          img {
+            width: 270px;
+          }
+        }
+      }
+
       .section-5 {
         background-position: center;
         background-size: cover;
@@ -1081,6 +1183,29 @@
           float: left;
         }
       }
+
+      .section-1 {
+        margin-bottom: 0;
+        .s-1-title {
+          display: block;
+          text-align: center;
+
+          h1 {
+            font-size: 60px;
+          }
+        }
+
+        .nft-pictures {
+          img {
+            width: 230px;
+          }
+        }
+
+        button {
+          margin-top: 40px;
+        }
+      }
+
 
       .section-2 {
         .section-2-items {
@@ -1324,6 +1449,7 @@
           }
         }
       }
+
       .section-10 {
         margin-top: 200px;
         margin-bottom: 200px;
@@ -1367,6 +1493,7 @@
   .App {
     .adaptive-nav {
       width: 40%;
+
       img {
         width: 80px;
       }
@@ -1377,6 +1504,7 @@
         }
       }
     }
+
     .App-header {
       .title {
         .title-items {
@@ -1403,6 +1531,7 @@
     .content {
       position: relative;
       top: 20px;
+
       .description {
         .description-pictures {
           position: relative;
@@ -1426,6 +1555,70 @@
               left: 40px
             }
           }
+        }
+      }
+
+      .section-1 {
+        .s-1-title {
+          h1 {
+            font-size: 40px;
+          }
+        }
+
+        .info-blocks {
+          margin-top: 46px;
+          flex-direction: column;
+          gap: 30px;
+          align-items: center;
+
+          span {
+            display: block;
+          }
+
+          .big-block {
+            width: 50%;
+            box-shadow: 0 0 30px 15px rgba(0, 0, 0, 0.1);
+          }
+
+          .small-block {
+            width: 30%;
+            box-shadow: 0 0 30px 15px rgba(0, 0, 0, 0.1);
+          }
+        }
+
+        .nft-pictures {
+          .first-row {
+            width: 100%;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+          }
+
+          .second-row {
+            width: 100%;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            margin-left: auto;
+            margin-right: auto;
+
+            .gg-pictures {
+              display: none;
+            }
+          }
+
+
+          img {
+            width: 100%;
+          }
+        }
+
+        button {
+          width: 300px;
+          height: 50px;
+          background: #F2C067;
+          font-family: 'Comfortaa', cursive;
+          border: none;
+          border-radius: 90px;
+          font-size: 20px;
         }
       }
 
@@ -1977,6 +2170,7 @@
 
                 .play {
                   margin-top: 0;
+
                   img {
                     width: 100px;
                   }
@@ -2000,6 +2194,7 @@
               justify-content: center;
               width: 100%;
               text-decoration: none;
+
               button {
                 width: 100%;
                 height: 100px;
@@ -2035,6 +2230,18 @@
         }
       }
 
+      .section-1 {
+        .info-blocks {
+          .big-block {
+            width: 90%;
+          }
+
+          .small-block {
+            width: 50%;
+          }
+        }
+      }
+
       .section-2 {
         .section-2-items {
           .items {
@@ -2043,11 +2250,14 @@
             }
           }
         }
+
         .split-pictures {
           position: relative;
           bottom: 300px;
         }
       }
+
+
 
       .section-5 {
         .adaptive-numbers {
@@ -2101,6 +2311,7 @@
           }
         }
       }
+
       .section-10 {
         margin-top: 100px;
         margin-bottom: 100px;
@@ -2123,6 +2334,7 @@
   .App {
     .adaptive-nav {
       width: 50%;
+
       img {
         width: 80px;
       }
@@ -2135,6 +2347,13 @@
     }
 
     .content {
+      .section-1 {
+        button {
+          width: 100%;
+          height: 100px;
+        }
+      }
+
       .section-3 {
         .sections-3-items {
           .questions {
@@ -2191,12 +2410,14 @@
         }
       }
     }
+
     .section-7 {
       .s7-items {
         .title {
           .logo {
           }
         }
+
         .pictures {
           .dog-head {
             img {
@@ -2251,6 +2472,7 @@
           bottom: 350px;
         }
       }
+
       .section-5 {
         .adaptive-numbers {
           .presale {
@@ -2298,7 +2520,7 @@
   }
 }
 
-@media screen and (max-width: 517px) and (min-width: 513px){
+@media screen and (max-width: 517px) and (min-width: 513px) {
   .App {
     .content {
       .section-2 {
@@ -2326,6 +2548,7 @@
         }
       }
     }
+
     .content {
       .description {
         .description-pictures {
@@ -2342,6 +2565,7 @@
           }
         }
       }
+
       .section-2 {
         .section-2-items {
           .items {
@@ -2354,6 +2578,7 @@
             }
           }
         }
+
         .split-pictures {
           width: 100%;
         }
@@ -2361,6 +2586,7 @@
 
       .section-3 {
         padding-top: 100px;
+
         .sections-3-items {
           .line {
             .q-numbers {
@@ -2369,6 +2595,7 @@
               gap: 15px;
             }
           }
+
           h1 {
             font-size: 40px;
           }
@@ -2383,6 +2610,7 @@
                 .install-title-adaptive {
                   font-size: 45px;
                 }
+
                 .install-text {
                   font-size: 20px;
                 }
@@ -2439,11 +2667,13 @@
           }
         }
       }
+
       .section-8 {
         .s8-items {
           .items-title {
             font-size: 40px;
           }
+
           .items-text {
             font-size: 16px;
           }
@@ -2453,7 +2683,7 @@
   }
 }
 
-@media screen and (max-width: 551px) and (min-width: 528px){
+@media screen and (max-width: 551px) and (min-width: 528px) {
   .App {
     .content {
       .section-2 {
@@ -2466,7 +2696,7 @@
   }
 }
 
-@media screen and (max-width: 517px) and (min-width: 517px){
+@media screen and (max-width: 517px) and (min-width: 517px) {
   .App {
     .content {
       .section-2 {
@@ -2494,7 +2724,7 @@
   }
 }
 
-@media screen and (max-width: 442px){
+@media screen and (max-width: 442px) {
   .App {
     .adaptive-nav {
       img {
@@ -2517,6 +2747,7 @@
         }
       }
     }
+
     .content {
       .description {
         .description-pictures {
@@ -2611,6 +2842,7 @@
           }
         }
       }
+
       .section-5 {
         .adaptive-numbers {
           .marketing {
@@ -2623,7 +2855,7 @@
   }
 }
 
-@media screen and (max-width: 398px){
+@media screen and (max-width: 398px) {
   .App {
     .content {
       .section-5 {
@@ -2668,6 +2900,7 @@
             left: 80px;
           }
         }
+
         .diagram-info {
           .info-description {
             img {
@@ -2676,6 +2909,7 @@
           }
         }
       }
+
       .section-4 {
         .s-4-items {
           .install-block {
@@ -2699,6 +2933,7 @@
           }
         }
       }
+
       .section-5 {
         .adaptive-numbers {
           .marketing {
