@@ -71,12 +71,9 @@ function App() {
                                 <img src={logoText} alt="logo"/>
                             </div>
                             <div className="nav">
-                                <a href="https://bscscan.com/token/0xcba27d7abedb5e8cc171658dc0efe829649478e3">Contract</a>
                                 <a href="#">GAME</a>
-                                <a href="https://poocoin.app/tokens/0xcba27d7abedb5e8cc171658dc0efe829649478e3">poocoin</a>
-                                <a href="https://app.uncx.network/amm/pancake-v2/pair/0x21D4fFe97D3806ba70eDd4f3Dd055BC10Cfa3562">unicrypt</a>
                                 <a href="#">whitepaper</a>
-                                <a href="#">NFT</a>
+                                <a href="#">kyc & audit</a>
                             </div>
                         </div>
                         <div className="title">
@@ -84,23 +81,15 @@ function App() {
                                 <div className="title-text">
                                     <div className="text">
                                         <div className="title-head">
-                                            <div className="play">
-                                                <a href="https://www.youtube.com/watch?v=G2Br6wiJ198"><img src={play}
-                                                                                                           alt="play"/></a>
-                                                <div className="play-text">watching video about Silky Inu</div>
-                                            </div>
                                             <h1>WELCOME TO SILKY INU</h1>
                                         </div>
-                                        <span>A DECENTRALIZED MEME TOKEN</span>
+                                        <span>SILKY is a unique collection of 5555 NFT unique Silky Dogs with which <br/>you can play with, earning points.</span>
                                     </div>
                                 </div>
                                 <img className="dogs" src={dogs} alt="dogs"/>
                                 <div className="title-options">
-                                    <a href="https://pancakeswap.finance/swap?outputCurrency=0xcba27D7abEdB5E8cc171658dC0eFE829649478e3&chainId=56">
-                                        <button>BUY ON PANCAKESWAP</button>
-                                    </a>
                                     <a href="#">
-                                        <button>NFT coming soon</button>
+                                        <button>Claim NFT</button>
                                     </a>
                                 </div>
                             </div>
@@ -179,70 +168,69 @@ function App() {
                         </div>
                         <img className="split-pictures" src={dog} alt="dog"/>
                     </div>
-                    <div className="section-3">
-                        <div className="container">
-                            <div className="sections-3-items">
-                                <h1>roadmap of silky: </h1>
-                                <div className="line">
-                                    <div className="q-numbers">
-                                        <span>Phase 1</span>
-                                        <span>Phase 2</span>
-                                        <span>Phase 3</span>
-                                        <span>Phase 4</span>
-                                    </div>
-                                    <img src={questionsLine} alt="line"/>
-                                </div>
-                                <div className="questions row">
-                                    {roadMapItems.map(item =>
-                                        <div className="card col-3">
-                                            <span className="card-title">{item.title}</span>
-                                            <div className="question">
-                                                {item.questions.map(q =>
-                                                    <div>
-                                                        <img src={questionsImg} alt="q"/>
-                                                        <span>{q}</span>
-                                                    </div>
-                                                )}
-                                            </div>
-                                        </div>
-                                    )}
-                                </div>
-                            </div>
-                        </div>
-                        <div className="s3-split-pictures">
-                            <img className="small-dog" src={smallDog} alt="dog"/>
-                            <img className="big-dog" src={bigDog} alt="dog"/>
-                        </div>
-                    </div>
+                    {/*<div className="section-3">*/}
+                    {/*    <div className="container">*/}
+                    {/*        <div className="sections-3-items">*/}
+                    {/*            <h1>roadmap of silky: </h1>*/}
+                    {/*            <div className="line">*/}
+                    {/*                <div className="q-numbers">*/}
+                    {/*                    <span>Phase 1</span>*/}
+                    {/*                    <span>Phase 2</span>*/}
+                    {/*                    <span>Phase 3</span>*/}
+                    {/*                    <span>Phase 4</span>*/}
+                    {/*                </div>*/}
+                    {/*                <img src={questionsLine} alt="line"/>*/}
+                    {/*            </div>*/}
+                    {/*            <div className="questions row">*/}
+                    {/*                {roadMapItems.map(item =>*/}
+                    {/*                    <div className="card col-3">*/}
+                    {/*                        <span className="card-title">{item.title}</span>*/}
+                    {/*                        <div className="question">*/}
+                    {/*                            {item.questions.map(q =>*/}
+                    {/*                                <div>*/}
+                    {/*                                    <img src={questionsImg} alt="q"/>*/}
+                    {/*                                    <span>{q}</span>*/}
+                    {/*                                </div>*/}
+                    {/*                            )}*/}
+                    {/*                        </div>*/}
+                    {/*                    </div>*/}
+                    {/*                )}*/}
+                    {/*            </div>*/}
+                    {/*        </div>*/}
+                    {/*    </div>*/}
+                    {/*</div>*/}
                     <div className="section-4">
                         <div className="container">
                             <div className="s-4-items">
-                                <h1>How to buy silky inu (slk)</h1>
+                                <h1>How to buy nftl</h1>
                                 <div className="s-4-cards">
                                     <div className="card-1">
                                         <span className="card-title">1.Installation</span>
                                         <span className="card-info">Download TRUST WALLET</span>
                                         <img className="width-split-line" src={widthSplitLine} alt="split"/>
                                     </div>
-                                    <img className="splitLine" src={splitLine} alt="split"/>
                                     <div className="card-2">
-                                        <span className="card-title">2. Buy BNB</span>
+                                        <span className="card-title">2. Buy <span className="text-black d-inline">SOL</span></span>
                                         <span
-                                            className="card-info"><span>Run TRUST WALLET</span><span>then click buy</span></span>
+                                            className="card-info"><span>Run PHANTOM WALLET</span><span>then click buy</span></span>
                                         <img className="width-split-line" src={widthSplitLine} alt="split"/>
                                     </div>
-                                    <img className="splitLine" src={splitLine} alt="split"/>
                                     <div className="card-3">
-                                        <span className="card-title">3. Swap</span>
-                                        <span
-                                            className="card-info"><span>Go to PancakeSwap</span><span>to swap BNB to SLK</span></span>
-                                        <img className="width-split-line" src={widthSplitLine} alt="split"/>
+                                        <span className="card-title">3. Claim <span className="text-black d-inline">NFT</span></span>
+                                        <span className="card-info">
+                                            <span>Go to SILKY INU website </span>
+                                            <span>and click Claim NFT, to</span>
+                                            <span>do so you need to have</span>
+                                            <span>1 SOL in your wallet</span>
+                                        </span>
                                     </div>
-                                    <img className="splitLine" src={splitLine} alt="split"/>
                                     <div className="card-4">
                                         <span className="card-title">4. Hold</span>
-                                        <span
-                                            className="card-info"><span>Now you watch,</span><span>SLK tokens grow.</span></span>
+                                        <span className="card-info">
+                                            <span>You accumulate NFTs, play</span>
+                                            <span>games, earn points and</span>
+                                            <span>enter prize drawings.</span>
+                                        </span>
                                     </div>
                                 </div>
                                 <div className="install-block">
