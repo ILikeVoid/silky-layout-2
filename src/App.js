@@ -51,6 +51,8 @@ import nft3 from "./assets/img/nft/nft-3.png"
 import nft4 from "./assets/img/nft/nft-4.png"
 import nft5 from "./assets/img/nft/nft-5.png"
 import nftRepeat from "./assets/img/nft/nft-reapit.png"
+import crestImg from "./assets/img/crest.png"
+import video_title from "./assets/img/video-title.png"
 
 
 function App() {
@@ -204,33 +206,53 @@ function App() {
                             <div className="s-4-items">
                                 <h1>How to buy nftl</h1>
                                 <div className="s-4-cards">
-                                    <div className="card-1">
-                                        <span className="card-title">1.Installation</span>
-                                        <span className="card-info">Download TRUST WALLET</span>
-                                        <img className="width-split-line" src={widthSplitLine} alt="split"/>
+                                    <div className="first-cards">
+                                        <div className="card-1">
+                                            <span className="card-title">1. Installation</span>
+                                            <span className="card-info">Download<br/>TRUST WALLET</span>
+                                        </div>
+                                        <div className="card-2">
+                                        <span className="card-title">2. Buy <span
+                                            className="text-black d-inline">SOL</span></span>
+                                            <span
+                                                className="card-info"><span>Run PHANTOM WALLET</span><span
+                                                className="d-block">then click buy</span></span>
+                                        </div>
                                     </div>
-                                    <div className="card-2">
-                                        <span className="card-title">2. Buy <span className="text-black d-inline">SOL</span></span>
-                                        <span
-                                            className="card-info"><span>Run PHANTOM WALLET</span><span>then click buy</span></span>
-                                        <img className="width-split-line" src={widthSplitLine} alt="split"/>
-                                    </div>
-                                    <div className="card-3">
-                                        <span className="card-title">3. Claim <span className="text-black d-inline">NFT</span></span>
-                                        <span className="card-info">
-                                            <span>Go to SILKY INU website </span>
-                                            <span>and click Claim NFT, to</span>
-                                            <span>do so you need to have</span>
-                                            <span>1 SOL in your wallet</span>
+                                    <img className='crest' src={crestImg} alt="crest"/>
+                                    <div className="second-cards">
+                                        <div className="card-3">
+                                        <span className="card-title">3. Claim <span
+                                            className="text-black d-inline">NFT</span></span>
+                                            <span className="card-info">
+                                                <span className="d-block">Go to SILKY INU website </span>
+                                                <span className="d-block">and click Claim NFT, to</span>
+                                                <span className="d-block">do so you need to have</span>
+                                                <span className="d-block">1 SOL in your wallet</span>
+                                            </span>
+                                        </div>
+                                        <div className="card-4">
+                                            <span className="card-title">4. Hold</span>
+                                            <span className="card-info">
+                                            <span className="d-block">You accumulate NFTs, play</span>
+                                            <span className="d-block">games, earn points and</span>
+                                            <span className="d-block">enter prize drawings.</span>
                                         </span>
+                                        </div>
                                     </div>
-                                    <div className="card-4">
-                                        <span className="card-title">4. Hold</span>
-                                        <span className="card-info">
-                                            <span>You accumulate NFTs, play</span>
-                                            <span>games, earn points and</span>
-                                            <span>enter prize drawings.</span>
-                                        </span>
+                                </div>
+                                <div className="video">
+                                    <div className="container">
+                                        <span className="video-title">VIdeo instruction</span>
+                                        <div className="video-block" >
+                                            <YouTube
+                                                     title={video_title}
+                                                     opts={{
+                                                         height: '600px',
+                                                         width: '90%',
+                                                         border: "white 10px",
+                                                     }}/>
+                                        </div>
                                     </div>
                                 </div>
                                 <div className="install-block">
@@ -238,21 +260,16 @@ function App() {
                                         <div className="install-items">
                                             <span className="install-title-adaptive"><span>Start</span><span>installation now</span></span>
                                             <span className="install-title">Start installation now</span>
-                                            <span className="install-text">Download TRUST WALLET</span>
-                                            <div className="links">
-                                                <button onClick={(e) => {
-                                                    e.preventDefault()
-                                                    window.location.href = "https://apps.apple.com/app/apple-store/id1288339409?mt=8"
-                                                }}>
+                                            <span className="install-text">Download PHANTOM WALLET</span>
+                                            <span className="links">
+                                                <a href="#">
                                                     <img src={appStore} alt="app-store"/>
-                                                    <span>App Store</span></button>
-                                                <button onClick={(e) => {
-                                                    e.preventDefault()
-                                                    window.location.href = "https://play.google.com/store/apps/details?id=com.wallet.crypto.trustapp&referrer=utm_source%3Dwebsite&pli=1"
-                                                }}>
+                                                    <span>App Store</span>
+                                                </a>
+                                                <a href="#">
                                                     <img src={googlePlay} alt="app-store"/>
-                                                </button>
-                                            </div>
+                                                </a>
+                                            </span>
                                         </div>
                                         <img className="phone" src={phone} alt="iphone"/>
                                     </div>
