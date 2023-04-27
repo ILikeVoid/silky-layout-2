@@ -27,6 +27,7 @@
   .adaptive-links {
     transition: 0.3s;
     margin-top: 20px;
+    padding-top: 100px;
 
     a {
       margin-top: 30px;
@@ -375,6 +376,7 @@
 
     .section-3 {
       background: #58575C;
+      padding-bottom: 100px;
 
       .sections-3-items {
         padding-top: 100px;
@@ -509,7 +511,7 @@
 
         .install-block {
           position: relative;
-          top: 100px;
+          top: 80px;
 
           .install {
             display: flex;
@@ -581,9 +583,14 @@
       }
     }
 
+
     .section-5 {
       margin-top: 100px;
       padding-bottom: 100px;
+
+      img {
+        width: 70%;
+      }
 
 
       h1 {
@@ -615,39 +622,25 @@
           bottom: 500px;
         }
 
-        .marketing {
-          width: 200px;
-          position: relative;
-          bottom: 550px;
-          left: 1000px;
-        }
-
         .team {
           width: 200px;
           position: relative;
-          bottom: 250px;
-          left: 1000px
+          bottom: 270px;
+          left: 400px
         }
 
         .locked {
-          width: 200px;
+          width: 300px;
           position: relative;
           bottom: 200px;
-          left: 650px;
-        }
-
-        .num-1 {
-          width: 200px;
-          position: relative;
-          bottom: 350px;
-          left: 350px;
+          left: 550px;
         }
 
         .num-2 {
-          width: 200px;
+          width: 400px;
           position: relative;
-          bottom: 350px;
-          left: 500px;
+          bottom: 420px;
+          left: 750px;
         }
 
         .fees {
@@ -970,10 +963,161 @@
     }
   }
 
+  .game-section {
+    margin-top: 100px;
+    padding-bottom: 50px;
+    background-image: url("./assets/img/bg-game.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .game-section-items {
+
+      .d-title {
+        font-weight: 800;
+      }
+
+      .game-nft {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 50px;
+        margin-bottom: 50px;
+      }
+
+      .game-nft-adaptive {
+        display: none;
+      }
+    }
+
+    h1 {
+      font-family: 'Poppins', sans-serif;
+      text-transform: uppercase;
+      margin-bottom: 50px;
+    }
+
+    span {
+      font-size: 20px;
+      font-family: 'Comfortaa', cursive;
+      letter-spacing: 0.105em;
+      display: block;
+    }
+  }
+
+  .nft-game {
+    margin-top: 100px;
+
+
+    h1 {
+      font-size: 60px;
+      font-family: 'Poppins', sans-serif;
+      text-transform: uppercase;
+      margin-bottom: 50px;
+    }
+
+    .nft-game-section-items {
+      .d-title {
+        margin-bottom: 20px;
+        font-weight: 800;
+      }
+
+      span {
+        font-size: 20px;
+        font-family: 'Comfortaa', cursive;
+        display: block;
+      }
+
+      .screen-game-pictures {
+        background-image: url("./assets/img/game-background.svg");
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        margin-top: 50px;
+
+        .absolute-img {
+          display: flex;
+          justify-content: center;
+        }
+
+        .relative-img {
+          position: relative;
+          bottom: 100px;
+          display: flex;
+          justify-content: space-between;
+        }
+      }
+    }
+  }
+
+  .mechanics-section {
+    margin-top: 100px;
+    background: #F2C067;
+    padding: 24px 0;
+
+    h1 {
+      font-size: 60px;
+      text-transform: uppercase;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    span {
+      font-size: 20px;
+      display: block;
+      font-family: 'Comfortaa', cursive;
+    }
+
+    .mechanics-items {
+      width: 100%;
+      display: flex;
+
+      .sections {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        gap: 36px;
+        margin-top: 50px;
+
+        .s-title {
+          font-weight: bold;
+        }
+      }
+      .mechanics-img {
+        display: block;
+        width:  50%;
+      }
+    }
+  }
+
+  .faq-section {
+    background-image: url("./assets/img/game-background.svg");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-top: 100px;
+
+    h1 {
+      font-size: 60px;
+      font-family: 'Poppins', sans-serif;
+      text-transform: uppercase;
+    }
+
+    span {
+      display: block;
+      font-weight: bold;
+      font-family: 'Poppins', sans-serif;
+      text-transform: uppercase;
+      margin-bottom: 24px;
+    }
+
+    li{
+      font-family: 'Comfortaa', cursive;
+      text-transform: uppercase;
+    }
+  }
+
   .footer {
     background: #F2C067;
     padding-top: 70px;
     padding-bottom: 35px;
+
 
     .footer-head {
       display: flex;
@@ -1069,25 +1213,19 @@
           .team {
             position: relative;
             bottom: 250px;
-            left: 900px
+            left: 300px
           }
 
           .locked {
             position: relative;
-            bottom: 230px;
-            left: 570px;
-          }
-
-          .num-1 {
-            position: relative;
-            bottom: 350px;
-            left: 300px;
+            bottom: 200px;
+            left: 450px;
           }
 
           .num-2 {
             position: relative;
-            bottom: 350px;
-            left: 410px;
+            bottom: 410px;
+            left: 650px;
           }
 
           .fees {
@@ -1324,6 +1462,81 @@
         }
       }
 
+      .game-section {
+
+        h1 {
+          font-size: 60px;
+          text-align: center;
+        }
+
+        .game-section-items {
+
+          .game-nft {
+            display: none;
+          }
+
+          .game-nft-adaptive {
+            margin-top: 50px;
+            margin-bottom: 50px;
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+
+            .nft-column {
+              display: flex;
+              justify-content: center;
+              gap: 100px;
+
+              img {
+                width: 300px;
+              }
+            }
+
+            .last-nft-column {
+              display: flex;
+              justify-content: center;
+
+              img {
+                width: 300px;
+              }
+            }
+          }
+
+          span {
+            display: block;
+            font-family: 'Comfortaa', cursive;
+            text-align: center;
+          }
+        }
+      }
+
+      .nft-game {
+        h1 {
+          text-align: center;
+        }
+
+        .nft-game-section-items {
+
+          .screen-game-pictures {
+            .absolute-img {
+              img {
+                width: 300px;
+              }
+            }
+
+            .relative-img {
+              img {
+                width: 400px;
+              }
+            }
+          }
+
+          span {
+            text-align: center;
+          }
+        }
+      }
+
       .section-5 {
         padding-bottom: 0;
 
@@ -1334,36 +1547,23 @@
 
         .diagram-numbers {
 
-          .marketing {
-            width: 130px;
-            position: relative;
-            bottom: 550px;
-            left: 800px;
-          }
-
           .team {
-            width: 130px;
+            width: 200px;
             position: relative;
-            bottom: 270px;
-            left: 800px
+            bottom: 200px;
+            left: 270px
           }
 
           .locked {
             position: relative;
-            bottom: 230px;
-            left: 500px;
-          }
-
-          .num-1 {
-            position: relative;
-            bottom: 350px;
-            left: 200px;
+            bottom: 200px;
+            left: 340px;
           }
 
           .num-2 {
             position: relative;
-            bottom: 350px;
-            left: 320px;
+            bottom: 390px;
+            left: 520px;
           }
 
           .fees {
@@ -1474,6 +1674,9 @@
         }
       }
     }
+    .footer {
+      margin-top: 200px;
+    }
   }
 }
 
@@ -1560,6 +1763,43 @@
             }
           }
         }
+      }
+
+      .game-section {
+        h1 {
+          font-size: 40px;
+        }
+      }
+
+      .mechanics-section {
+        h1 {
+          font-size: 40px;
+          text-align: center;
+        }
+
+        span {
+          text-align: center;
+        }
+
+        .mechanics-items {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+
+          img {
+            display: none;
+          }
+        }
+      }
+
+      .faq-section {
+
+        h1 {
+          font-size: 40px;
+          margin-bottom: 50px;
+        }
+
+        text-align: center;
       }
 
       .section-1 {
@@ -1717,7 +1957,6 @@
             }
 
 
-
             .width-split-line {
               display: initial;
             }
@@ -1802,6 +2041,35 @@
         }
       }
 
+      .nft-game {
+        h1 {
+          font-size: 40px;
+          text-align: center;
+        }
+
+        .nft-game-section-items {
+
+          .screen-game-pictures {
+            .absolute-img {
+              img {
+                width: 250px;
+              }
+            }
+
+            .relative-img {
+              img {
+                width: 280px;
+              }
+            }
+          }
+
+          span {
+            text-align: center;
+          }
+        }
+      }
+
+
       .section-5 {
         h1 {
           font-size: 40px;
@@ -1816,39 +2084,26 @@
             bottom: 500px;
           }
 
-          .marketing {
-            width: 70px;
-            position: relative;
-            bottom: 550px;
-            left: 600px;
-          }
 
           .team {
             width: 70px;
             position: relative;
-            bottom: 250px;
-            left: 600px
+            bottom: 150px;
+            left: 200px
           }
 
           .locked {
             width: 70px;
             position: relative;
             bottom: 140px;
-            left: 360px;
-          }
-
-          .num-1 {
-            width: 50px;
-            position: relative;
-            bottom: 250px;
-            left: 100px;
+            left: 300px;
           }
 
           .num-2 {
             width: 50px;
             position: relative;
             bottom: 200px;
-            left: 210px;
+            left: 400px;
           }
 
           span {
@@ -1889,12 +2144,11 @@
             position: initial;
           }
 
-          .num-1 {
-            display: none;
-          }
 
           .num-2 {
-            display: none;
+            margin-top: 40px;
+            width: 100%;
+            position: initial;
           }
 
           span {
@@ -2059,7 +2313,7 @@
       }
 
       .section-9 {
-        margin-top: 100px;
+        margin-top: 200px;
 
         h1 {
           font-size: 40px;
@@ -2148,16 +2402,18 @@
 
 @media screen and (max-width: 768px) {
   .App {
-
-
     .adaptive-nav {
       img {
         width: 80px;
       }
 
       .adaptive-links {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+
         a {
-          font-size: 1.6rem;
+          font-size: 1.8rem;
         }
       }
     }
@@ -2281,47 +2537,76 @@
         margin-top: 1250px
       }
 
+      .game-section {
+
+        span {
+          text-align: center;
+        }
+
+        .game-section-items {
+          .game-nft-adaptive {
+            .last-nft-column {
+              img {
+                width: 220px;
+              }
+            }
+          }
+        }
+      }
+
+      .nft-game {
+        .nft-game-section-items {
+
+          .screen-game-pictures {
+            .absolute-img {
+              img {
+                width: 150px;
+              }
+            }
+
+            .relative-img {
+              position: relative;
+              bottom: 30px;
+
+              img {
+                width: 200px;
+              }
+            }
+          }
+
+          span {
+            text-align: center;
+          }
+        }
+      }
+
       .section-5 {
         .adaptive-numbers {
 
           .presale {
             position: relative;
-            bottom: 300px;
-          }
-
-          .marketing {
-            width: 60px;
-            position: relative;
-            bottom: 350px;
-            left: 430px;
+            bottom: 400px;
           }
 
           .team {
             width: 60px;
             position: relative;
-            bottom: 170px;
-            left: 400px
+            bottom: 150px;
+            left: 110px
           }
 
           .locked {
             width: 60px;
             position: relative;
             bottom: 140px;
-            left: 270px;
-          }
-
-          .num-1 {
-            width: 60px;
-            position: relative;
-            bottom: 225px;
-            left: 100px;
+            left: 200px;
           }
 
           .num-2 {
             width: 50px;
             position: relative;
             bottom: 200px;
-            left: 170px;
+            left: 300px;
           }
         }
       }
@@ -2364,8 +2649,9 @@
       }
 
       .adaptive-links {
+
         a {
-          font-size: 1.5rem;
+          font-size: 1.8rem;
         }
       }
     }
@@ -2375,6 +2661,20 @@
         button {
           width: 100%;
           height: 100px;
+        }
+      }
+
+      .game-section {
+        .game-section-items {
+          .game-nft-adaptive {
+            .nft-column {
+              gap: 40px;
+
+              img {
+                width: 220px;
+              }
+            }
+          }
         }
       }
 
@@ -2397,39 +2697,25 @@
             bottom: 300px;
           }
 
-          .marketing {
-            width: 60px;
-            position: relative;
-            bottom: 380px;
-            left: 460px;
-          }
-
           .team {
             width: 60px;
             position: relative;
-            bottom: 170px;
-            left: 420px
+            bottom: 160px;
+            left: 120px
           }
 
           .locked {
             width: 60px;
             position: relative;
             bottom: 140px;
-            left: 270px;
-          }
-
-          .num-1 {
-            width: 60px;
-            position: relative;
-            bottom: 225px;
-            left: 100px;
+            left: 200px;
           }
 
           .num-2 {
             width: 50px;
             position: relative;
             bottom: 200px;
-            left: 170px;
+            left: 300px;
           }
         }
       }
@@ -2501,42 +2787,29 @@
         .adaptive-numbers {
           .presale {
             position: relative;
-            bottom: 300px;
-          }
-
-          .marketing {
-            width: 60px;
-            position: relative;
-            bottom: 320px;
-            left: 423px;
+            bottom: 400px;
           }
 
           .team {
             width: 60px;
             position: relative;
-            bottom: 170px;
-            left: 390px
+            bottom: 150px;
+            left: 110px
           }
 
           .locked {
             width: 60px;
             position: relative;
             bottom: 140px;
-            left: 250px;
+            left: 200px;
           }
 
-          .num-1 {
-            width: 60px;
-            position: relative;
-            bottom: 225px;
-            left: 100px;
-          }
 
           .num-2 {
             width: 50px;
             position: relative;
             bottom: 200px;
-            left: 170px;
+            left: 300px;
           }
         }
       }
@@ -2666,39 +2939,25 @@
             bottom: 300px;
           }
 
-          .marketing {
-            width: 50px;
-            position: relative;
-            bottom: 300px;
-            left: 410px;
-          }
-
           .team {
             width: 50px;
             position: relative;
-            bottom: 150px;
-            left: 380px
+            bottom: 130px;
+            left: 100px
           }
 
           .locked {
             width: 50px;
             position: relative;
             bottom: 120px;
-            left: 250px;
-          }
-
-          .num-1 {
-            width: 50px;
-            position: relative;
-            bottom: 170px;
-            left: 70px;
+            left: 190px;
           }
 
           .num-2 {
             width: 50px;
             position: relative;
-            bottom: 190px;
-            left: 100px;
+            bottom: 170px;
+            left: 300px;
           }
         }
       }
@@ -2767,8 +3026,9 @@
       }
 
       .adaptive-links {
+        margin-top: 80px;
         a {
-          font-size: 1.2rem;
+          font-size: 1.8rem;
         }
       }
     }
@@ -2818,42 +3078,29 @@
         .adaptive-numbers {
           .presale {
             position: relative;
-            bottom: 250px;
-          }
-
-          .marketing {
-            width: 50px;
-            position: relative;
-            bottom: 260px;
-            left: 350px;
+            bottom: 300px;
           }
 
           .team {
             width: 50px;
             position: relative;
             bottom: 130px;
-            left: 310px
+            left: 100px
           }
 
           .locked {
             width: 50px;
             position: relative;
             bottom: 110px;
-            left: 210px;
+            left: 190px;
           }
 
-          .num-1 {
-            width: 50px;
-            position: relative;
-            bottom: 170px;
-            left: 70px;
-          }
 
           .num-2 {
             width: 50px;
             position: relative;
             bottom: 180px;
-            left: 80px;
+            left: 290px;
           }
         }
       }
@@ -2897,21 +3144,15 @@
         .adaptive-numbers {
           .presale {
             position: relative;
-            bottom: 250px;
+            bottom: 300px;
           }
 
-          .marketing {
-            width: 50px;
-            position: relative;
-            bottom: 260px;
-            left: 310px;
-          }
 
           .team {
             width: 50px;
             position: relative;
             bottom: 130px;
-            left: 290px
+            left: 100px
           }
 
           .locked {
@@ -2921,18 +3162,12 @@
             left: 190px;
           }
 
-          .num-1 {
-            width: 50px;
-            position: relative;
-            bottom: 180px;
-            left: 70px;
-          }
 
           .num-2 {
             width: 50px;
             position: relative;
             bottom: 180px;
-            left: 80px;
+            left: 290px;
           }
         }
 
@@ -2971,13 +3206,8 @@
 
       .section-5 {
         .adaptive-numbers {
-          .marketing {
-            position: relative;
-            left: 270px;
-          }
-
           .num-2 {
-            left: 65px;
+            left: 290px;
             bottom: 180px;
           }
         }

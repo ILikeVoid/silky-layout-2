@@ -3,7 +3,6 @@ import './App.scss';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {roadMapItems} from "./roadMapItems/RoadMapItems"
 import YouTube from "react-youtube";
-import play from "./assets/img/Play-video-img.png"
 import dogs from "./assets/img/dogs.png"
 import gif from "./assets/video/game.gif"
 import switchImg from "./assets/img/switch.png"
@@ -11,24 +10,15 @@ import Rectangle from "./assets/img/Rectangle.png"
 import dog from "./assets/img/section3-dog.png"
 import questionsLine from "./assets/img/questions-line.png"
 import questionsImg from "./assets/img/card-q-img.png"
-import smallDog from "./assets/img/small-dog.png"
-import bigDog from "./assets/img/big-dog.png"
-import splitLine from "./assets/img/split-line.png"
 import appStore from "./assets/img/app-store.png"
 import googlePlay from "./assets/img/logos_google-play.png"
 import phone from "./assets/img/phone.png"
 import diagram from "./assets/img/diagrm.png"
-import diagramDog from "./assets/img/diagram-dog.png"
-import pooCoin from "./assets/img/partners/pooCoin.png"
 import coinMarket from "./assets/img/partners/coinMarket.png"
-import bnb from "./assets/img/partners/bnb.png"
-import dext from "./assets/img/partners/dext.png"
 import gecko from "./assets/img/partners/gecko.png"
 import trust from "./assets/img/partners/trust.png"
-import pancake from "./assets/img/partners/pancake.png"
+import open_sea from "./assets/img/partners/open-sea.png"
 import dogHead from "./assets/img/dog-head.png"
-import airEvent from "./assets/img/air-event.png"
-import pdf from "./assets/img/pdf.png"
 import team_img1 from "./assets/img/project-team/Group 35.png"
 import team_img2 from "./assets/img/project-team/Group 36.png"
 import team_img3 from "./assets/img/project-team/Group 37.png"
@@ -42,7 +32,6 @@ import telegram from "./assets/img/footer/telegram.png"
 import discord from "./assets/img/footer/ds.png"
 import email from "./assets/img/footer/email.png"
 import logoText from "./assets/img/logo-text.png"
-import widthSplitLine from "./assets/img/width-line.png"
 import menuImg from "./assets/img/menu-panel.png"
 import closeIcon from "./assets/img/close-icon.png"
 import nft1 from "./assets/img/nft/nft-1.png"
@@ -53,6 +42,18 @@ import nft5 from "./assets/img/nft/nft-5.png"
 import nftRepeat from "./assets/img/nft/nft-reapit.png"
 import crestImg from "./assets/img/crest.png"
 import video_title from "./assets/img/video-title.png"
+import secondNft1 from "./assets/img/nft/nft-2/nft-1.png"
+import secondNft2 from "./assets/img/nft/nft-2/nft-2.png"
+import secondNft3 from "./assets/img/nft/nft-2/nft-3.png"
+import secondNft4 from "./assets/img/nft/nft-2/nft-4.png"
+import secondNft5 from "./assets/img/nft/nft-2/nft-5.png"
+import gameNft from "./assets/img/screen-nft.png"
+import screenGame1 from "./assets/img/screen-game-1.png"
+import screenGame2 from "./assets/img/screen-game-2.png"
+import mechanicsImg from "./assets/img/mechanics-img.png"
+import phantom from "./assets/img/partners/phantom.png"
+import magic from "./assets/img/partners/magic.png"
+import nft from "./assets/img/partners/NFT.png"
 
 
 function App() {
@@ -170,37 +171,6 @@ function App() {
                         </div>
                         <img className="split-pictures" src={dog} alt="dog"/>
                     </div>
-                    {/*<div className="section-3">*/}
-                    {/*    <div className="container">*/}
-                    {/*        <div className="sections-3-items">*/}
-                    {/*            <h1>roadmap of silky: </h1>*/}
-                    {/*            <div className="line">*/}
-                    {/*                <div className="q-numbers">*/}
-                    {/*                    <span>Phase 1</span>*/}
-                    {/*                    <span>Phase 2</span>*/}
-                    {/*                    <span>Phase 3</span>*/}
-                    {/*                    <span>Phase 4</span>*/}
-                    {/*                </div>*/}
-                    {/*                <img src={questionsLine} alt="line"/>*/}
-                    {/*            </div>*/}
-                    {/*            <div className="questions row">*/}
-                    {/*                {roadMapItems.map(item =>*/}
-                    {/*                    <div className="card col-3">*/}
-                    {/*                        <span className="card-title">{item.title}</span>*/}
-                    {/*                        <div className="question">*/}
-                    {/*                            {item.questions.map(q =>*/}
-                    {/*                                <div>*/}
-                    {/*                                    <img src={questionsImg} alt="q"/>*/}
-                    {/*                                    <span>{q}</span>*/}
-                    {/*                                </div>*/}
-                    {/*                            )}*/}
-                    {/*                        </div>*/}
-                    {/*                    </div>*/}
-                    {/*                )}*/}
-                    {/*            </div>*/}
-                    {/*        </div>*/}
-                    {/*    </div>*/}
-                    {/*</div>*/}
                     <div className="section-4">
                         <div className="container">
                             <div className="s-4-items">
@@ -244,14 +214,14 @@ function App() {
                                 <div className="video">
                                     <div className="container">
                                         <span className="video-title">VIdeo instruction</span>
-                                        <div className="video-block" >
+                                        <div className="video-block">
                                             <YouTube
-                                                     title={video_title}
-                                                     opts={{
-                                                         height: '600px',
-                                                         width: '90%',
-                                                         border: "white 10px",
-                                                     }}/>
+                                                title={video_title}
+                                                opts={{
+                                                    height: '600px',
+                                                    width: '90%',
+                                                    border: "white 10px",
+                                                }}/>
                                         </div>
                                     </div>
                                 </div>
@@ -277,67 +247,194 @@ function App() {
                             </div>
                         </div>
                     </div>
+                    <div className="game-section">
+                        <div className="container">
+                            <h1>What is NFT?</h1>
+                            <div className="game-section-items">
+                                <span className="d-title">What Is an NFT?</span>
+                                <span>
+                                    An NFT is a digital asset that can come in the form of art,
+                                    music, in-game items, videos, and more. They are bought and sold online,
+                                    frequently with cryptocurrency, and they are generally encoded with the same underlying software as many cryptos.
+                                    Although they’ve been around since 2014, NFTs are gaining notoriety now because
+                                    they are becoming an increasingly popular way to buy and sell digital artwork.
+                                    The market for NFTs was worth a staggering $41 billion in 2021 alone,
+                                    an amount that is approaching the total value of the entire global fine art market.
+                                </span>
+                                <div className="game-nft">
+                                    <img src={secondNft1} alt="nft"/>
+                                    <img src={secondNft2} alt="nft"/>
+                                    <img src={secondNft3} alt="nft"/>
+                                    <img src={secondNft4} alt="nft"/>
+                                    <img src={secondNft5} alt="nft"/>
+                                </div>
+                                <div className="game-nft-adaptive">
+                                    <div className="nft-column">
+                                        <img src={secondNft1} alt="nft"/>
+                                        <img src={secondNft2} alt="nft"/>
+                                    </div>
+                                    <div className="nft-column">
+                                        <img src={secondNft3} alt="nft"/>
+                                        <img src={secondNft4} alt="nft"/>
+                                    </div>
+                                    <div className="last-nft-column">
+                                        <img src={secondNft5} alt="nft"/>
+                                    </div>
+                                </div>
+                                <span className="d-title">How Is an NFT Different from Cryptocurrency?</span>
+                                <span>
+                                    NFT stands for non-fungible token. It’s generally built using the same kind of programming as cryptocurrency,
+                                    like Bitcoin or Ethereum, but that’s where the similarity ends.<br/><br/>
+                                    Physical money and cryptocurrencies are “fungible,” meaning they can be traded or exchanged for one another.
+                                    They’re also equal in value—one dollar is always worth another dollar; one Bitcoin is always equal to another Bitcoin.
+                                    Crypto’s fungibility makes it a trusted means of conducting transactions on the blockchain.<br/><br/>
+                                    NFTs are different. Each has a digital signature that makes it impossible for NFTs to be exchanged for
+                                    or equal to one another (hence, non-fungible). One NBA Top Shot clip, for example, is not equal to EVERYDAYS simply because they’re both NFTs.
+                                    (One NBA Top Shot clip isn’t even necessarily equal to another NBA Top Shot clip, for that matter.)<br/><br/>
+                                    Best Crypto Exchanges 2022<br/>We've combed through the leading exchange offerings,
+                                    and reams of data, to determine the best crypto exchanges.
+                                </span><br/><br/>
+                                <span className="d-title">How Does an NFT Work?</span>
+                                <span>NFTs exist on a blockchain, which is a distributed public ledger that records transactions.
+                                    You’re probably most familiar with blockchain as the underlying process that makes
+                                    cryptocurrencies possible.<br/><br/>
+                                    Specifically, NFTs are typically held on the Ethereum blockchain, although other blockchains support them as well.
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="nft-game">
+                        <div className="container">
+                            <h1>Silku Inu NFT game</h1>
+                            <div className="nft-game-section-items">
+                                <span
+                                    className="d-title">Where you can play completely free without additonal fees.</span>
+                                <span>
+                                    The game is available in web and also for Android and iPhone.
+                                    In game you will need to pass various difficult levels to collect more tokens by SILKY character and become the best among other players.
+                                    Top 555 players will receive rewards in the form of SILKY tokens on their wallets.
+                                    You need to buy nft for 1 SOLANA, to recieve game access. The SILK tokens that will be collected, you can sell on a exchange.
+                                </span>
+                                <div className="screen-game-pictures">
+                                    <div className="absolute-img"><img src={gameNft} alt="nft"/></div>
+                                    <div className="relative-img">
+                                        <img src={screenGame1} alt="screen"/>
+                                        <img src={screenGame2} alt="screen"/>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="mechanics-section">
+                        <div className="container">
+                            <h1>Play to Earn mechanics</h1>
+                            <div className="mechanics-items">
+                                <div className="sections">
+                                    <div className="s-1">
+                                        <span className="s-title">TOKEN SLK</span>
+                                        <span>Owners of SILKY NFT can earn game tokens called SLK.</span>
+                                    </div>
+                                    <div className="s-2">
+                                        <span className="s-title">COMPETITION MODE</span>
+                                        <span>Top 555 players will receive various prizes in a form of NFT or SLK tokens.</span>
+                                    </div>
+                                    <div className="s-3">
+                                        <span className="s-title">IN-GAME REWARDS All NFT</span>
+                                        <span>All NFT and tokens that you will get, can be sold. To support the market, we will allocate 30% of the game's profit.</span>
+                                    </div>
+                                </div>
+                                <img className="mechanics-img" src={mechanicsImg} alt="mechanicsImg"/>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="section-3">
+                        <div className="container">
+                            <div className="sections-3-items">
+                                <h1>roadmap of silky: </h1>
+                                <div className="line">
+                                    <div className="q-numbers">
+                                        <span>Phase 1</span>
+                                        <span>Phase 2</span>
+                                        <span>Phase 3</span>
+                                        <span>Phase 4</span>
+                                    </div>
+                                    <img src={questionsLine} alt="line"/>
+                                </div>
+                                <div className="questions row">
+                                    {roadMapItems.map(item =>
+                                        <div className="card col-3">
+                                            <span className="card-title">{item.title}</span>
+                                            <div className="question">
+                                                {item.questions.map(q =>
+                                                    <div>
+                                                        <img src={questionsImg} alt="q"/>
+                                                        <span>{q}</span>
+                                                    </div>
+                                                )}
+                                            </div>
+                                        </div>
+                                    )}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="faq-section">
+                        <div className="container">
+                            <h1>F.A.Q</h1>
+                            <div className="faq-items">
+                                <div>
+                                    <span>How many NFTs can i mint from one wallet?</span>
+                                    <li>You can buy an unlimited number of NFTs for one wallet.</li>
+                                </div>
+                                <div>
+                                    <span>Where can I look for my NFTs? </span>
+                                    <li>You can see your NFTs on the opensia trading platform.</li>
+                                </div>
+                                <div>
+                                    <span>What does NFT give me? </span>
+                                    <li>NFT gives you opportunity to participate in a tournament, moreover more tokens
+                                        you collect,
+                                        more profit you will get by sell SLK token on a exchange.
+                                        Additionally, owners of NFT SILKY INU will receive privileges in competitions
+                                        and prizes of the project.
+                                    </li>
+                                </div>
+                                <div>
+                                    <span>Do game will have its own token?</span>
+                                    <li>At the moment, we are planning to integrate our token into the game.
+                                        All mechanics will be implemented via NFT and SLK okens to interact with the
+                                        game.
+                                    </li>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <div className="section-5">
                         <div className="container">
                             <h1>tokenomics silky inu</h1>
                             <div className="diagram"><img src={diagram} alt="diagram"/></div>
                             <div className="adaptive-numbers">
-                                <span className="presale">45%</span>
-                                <span className="marketing">20%</span>
-                                <span className="team">15%</span>
+                                <span className="presale">79.5%</span>
+                                <span className="team">5%</span>
                                 <span className="locked">10%</span>
-                                <span className="num-2">8%</span>
+                                <span className="num-2">5.5%</span>
                             </div>
                             <div className="diagram-numbers">
                                 <div className="presale">
-                                    <span className="numbers-title">Preasale & Listing</span>
-                                    <span>45%</span>
-                                </div>
-                                <div className="marketing">
-                                    <span className="numbers-title">Marketing</span>
-                                    <span>20%</span>
+                                    <span className="numbers-title">Mint</span>
+                                    <span>79.5%</span>
                                 </div>
                                 <div className="team">
-                                    <span className="numbers-title">Team</span>
-                                    <span>15%</span>
+                                    <span>5%</span>
+                                    <span className="numbers-title">NFT free mint</span>
                                 </div>
                                 <div className="locked">
-                                    <span className="numbers-title">Locked</span>
                                     <span>10%</span>
+                                    <span className="numbers-title">White list collaboration &marketing</span>
                                 </div>
                                 <div className="num-2">
-                                    <span>8%</span>
-                                </div>
-                            </div>
-                            <div className="diagram-info">
-                                <div className="info-description">
-                                    <div className="description">
-                                        <span className="description-title">Fees & Redistribution</span>
-                                        <span className="info-title">8% BURN</span>
-                                        <span className="info-text">4% of the tokens will be automatically
-                                        burned and 4% of the <br/>tokenswill be distributed to
-                                        the holders at each purchase.
-                                    </span>
-                                    </div>
-                                    <img src={diagramDog} alt="dog"/>
-                                </div>
-                                <div className="diagram-table">
-                                    <div className="items">
-                                        <span className="th">Total Supply</span>
-                                        <span className="text-uppercase">1 000 000 000 000 000 SLK</span>
-                                        <img src={widthSplitLine} alt="line"/>
-                                    </div>
-                                    <img className="splitLine" src={splitLine} alt="split"/>
-                                    <div className="items">
-                                        <span className="th">Token Symbol</span>
-                                        <span className="text-uppercase">SLK</span>
-                                        <img src={widthSplitLine} alt="line"/>
-                                    </div>
-                                    <img className="splitLine" src={splitLine} alt="split"/>
-                                    <div className="items">
-                                        <span className="th">Token Type</span>
-                                        <span className="text-uppercase">BEp-20 </span>
-                                    </div>
+                                    <span>5.5%</span>
+                                    <span className="numbers-title">Collections donation from sales to dog shelters</span>
                                 </div>
                             </div>
                         </div>
@@ -350,56 +447,15 @@ function App() {
                                     <div className="top-partners">
                                         <a href="#"><img src={coinMarket} alt="coinMarket"/></a>
                                         <a href="#"><img src={gecko} alt="gecko"/></a>
-                                        <a href="https://pancakeswap.finance/"><img src={pancake} alt="pancake"/></a>
+                                        <a href="#"><img src={open_sea} alt="open sea"/></a>
                                     </div>
                                     <div className="bot-partners">
                                         <a href="https://trustwallet.com/"><img src={trust} alt="trust"/></a>
-                                        <a href="https://www.binance.com/"><img src={bnb} alt="bnb"/></a>
-                                        <a href="https://poocoin.app/"><img src={pooCoin} alt="pooCoin"/></a>
-                                        <a href="https://www.dextools.io/"><img src={dext} alt="dext"/></a>
+                                        <a href="#"><img src={phantom} alt="phantom"/></a>
+                                        <a href="#"><img src={nft} alt="nft"/></a>
+                                        <a href="#"><img src={magic} alt="magic"/></a>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="section-7">
-                        <div className="container">
-                            <div className="s7-items">
-                                <div className="title">
-                                    <div className="logo">
-                                        <span className="title-text">AIR EVENT</span>
-                                        <span>COMING SOON</span>
-                                    </div>
-                                </div>
-                                <div className="pictures">
-                                    <div className="dog-head">
-                                        <img src={dogHead} alt="dogHead"/>
-                                        {/*<span><span>add liquidity to pancakeswap</span><span>SLK-BNB</span></span>*/}
-                                    </div>
-                                    <div><img className="air-event d-block" src={airEvent} alt="airEvent"/></div>
-                                </div>
-                                {/*<div className="btn">*/}
-                                {/*    <a href="https://pancakeswap.finance/add/BNB/0x0E09FaBB73Bd3Ade0a17ECC321fD13a19e81cE82/2500?minPrice=56.037925&maxPrice=163.576530">*/}
-                                {/*        <button>LIQUIDITY</button>*/}
-                                {/*    </a>*/}
-                                {/*</div>*/}
-                            </div>
-                        </div>
-                    </div>
-                    <div className="section-8">
-                        <div className="container">
-                            <h1>kyc & audit</h1>
-                            <div className="s8-items">
-                                <span className="items-title"><span>Download</span><span>the PDF file</span></span>
-                                <span
-                                    className="items-text"><span>With the full Silky-Inu-</span><span>BSC-Audit</span></span>
-                                <button onClick={(e) => {
-                                    e.preventDefault()
-                                    window.location.href = "https://dessertswap.finance/audits/Silky-Inu-BSC-Audit-20556617.pdf"
-                                }}>
-                                    <img src={pdf} alt="pdf"/>
-                                    Download
-                                </button>
                             </div>
                         </div>
                     </div>
@@ -427,18 +483,6 @@ function App() {
                                         <img src={team_img8} alt="team"/>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="section-10">
-                        <div className="container">
-                            <h1>Watching video </h1>
-                            <div className="video-block">
-                                <YouTube videoId="G2Br6wiJ198"
-                                         opts={{
-                                             height: '600px',
-                                             width: '90%',
-                                         }}/>
                             </div>
                         </div>
                     </div>
@@ -475,7 +519,7 @@ function App() {
                             <span>
                                 DENIAL OF RESPONSIBILITY:<br/><br/>
                             </span>
-                                <span>The SILKY INU project, neither its members, nor its social channels, nor persons and this
+                                <span>&nbsp;&nbsp;The SILKY INU project, neither its members, nor its social channels, nor persons and this
                             document are not responsible for providing trading advice and does not contain any advice on
                             investment of any kind. In situations where decentralization is the main driving force token, like
                             \other centralized methods, is recommended consult a professional or legal advisor before purchasing or
@@ -496,12 +540,9 @@ function App() {
                 <div className="adaptive-nav">
                     <img src={closeIcon} alt="close" onClick={() => setAdaptiveMenu(false)}/>
                     <div className="adaptive-links">
-                        <a href="https://bscscan.com/token/0xcba27d7abedb5e8cc171658dc0efe829649478e3">Contract</a>
                         <a href="#">GAME</a>
-                        <a href="https://poocoin.app/tokens/0xcba27d7abedb5e8cc171658dc0efe829649478e3">poocoin</a>
-                        <a href="https://app.uncx.network/amm/pancake-v2/pair/0x21D4fFe97D3806ba70eDd4f3Dd055BC10Cfa3562">unicrypt</a>
                         <a href="#">whitepaper</a>
-                        <a href="#">NFT</a>
+                        <a href="#">kyc & audit</a>
                     </div>
                 </div>
                 : null}
