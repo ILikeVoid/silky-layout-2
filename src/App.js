@@ -414,15 +414,15 @@ function App() {
                                 <h1>exchanges & partners of silky inu</h1>
                                 <div className="partners-items">
                                     <div className="top-partners">
-                                        <a href="#"><img src={coinMarket} alt="coinMarket"/></a>
-                                        <a href="#"><img src={gecko} alt="gecko"/></a>
-                                        <a href="#"><img src={open_sea} alt="open sea"/></a>
+                                        <a href="https://coinmarketcap.com/"><img src={coinMarket} alt="coinMarket"/></a>
+                                        <a href="https://www.coingecko.com/"><img src={gecko} alt="gecko"/></a>
+                                        <a href="https://opensea.io/"><img src={open_sea} alt="open sea"/></a>
                                     </div>
                                     <div className="bot-partners">
                                         <a href="https://trustwallet.com/"><img src={trust} alt="trust"/></a>
-                                        <a href="#"><img src={phantom} alt="phantom"/></a>
-                                        <a href="#"><img src={nft} alt="nft"/></a>
-                                        <a href="#"><img src={magic} alt="magic"/></a>
+                                        <a href="https://phantom.app/"><img src={phantom} alt="phantom"/></a>
+                                        <a href="https://www.nft.com/"><img src={nft} alt="nft"/></a>
+                                        <a href="https://magiceden.io/"><img src={magic} alt="magic"/></a>
                                     </div>
                                 </div>
                             </div>
@@ -498,9 +498,9 @@ function App() {
                 <div className="adaptive-nav">
                     <img src={closeIcon} alt="close" onClick={() => setAdaptiveMenu(false)}/>
                     <div className="adaptive-links">
-                        <a href="#">GAME</a>
-                        <a href="#">whitepaper</a>
-                        <a href="#">kyc & audit</a>
+                        <a href="http://silkydog.io/">GAME</a>
+                        <a href="https://drive.google.com/file/d/1kZb-JWCOUtjXYXcVUJcSx1w7AjRHLdwS/view?usp=drivesdk">whitepaper</a>
+                        <a href="https://dessertswap.finance/audits/Silky-Inu-BSC-Audit-20556617.pdf">kyc & audit</a>
                     </div>
                 </div>
                 : null}
