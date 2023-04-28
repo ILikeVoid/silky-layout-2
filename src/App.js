@@ -74,9 +74,9 @@ function App() {
                                 <img src={logoText} alt="logo"/>
                             </div>
                             <div className="nav">
-                                <a href="#">GAME</a>
-                                <a href="#">whitepaper</a>
-                                <a href="#">kyc & audit</a>
+                                <a href="http://silkydog.io/">GAME</a>
+                                <a href="https://drive.google.com/file/d/1kZb-JWCOUtjXYXcVUJcSx1w7AjRHLdwS/view?usp=drivesdk">whitepaper</a>
+                                <a href="https://dessertswap.finance/audits/Silky-Inu-BSC-Audit-20556617.pdf">kyc & audit</a>
                             </div>
                         </div>
                         <div className="title">
@@ -344,37 +344,6 @@ function App() {
                                     </div>
                                 </div>
                                 <img className="mechanics-img" src={mechanicsImg} alt="mechanicsImg"/>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="section-3">
-                        <div className="container">
-                            <div className="sections-3-items">
-                                <h1>roadmap of silky: </h1>
-                                <div className="line">
-                                    <div className="q-numbers">
-                                        <span>Phase 1</span>
-                                        <span>Phase 2</span>
-                                        <span>Phase 3</span>
-                                        <span>Phase 4</span>
-                                    </div>
-                                    <img src={questionsLine} alt="line"/>
-                                </div>
-                                <div className="questions row">
-                                    {roadMapItems.map(item =>
-                                        <div className="card col-3">
-                                            <span className="card-title">{item.title}</span>
-                                            <div className="question">
-                                                {item.questions.map(q =>
-                                                    <div>
-                                                        <img src={questionsImg} alt="q"/>
-                                                        <span>{q}</span>
-                                                    </div>
-                                                )}
-                                            </div>
-                                        </div>
-                                    )}
-                                </div>
                             </div>
                         </div>
                     </div>
