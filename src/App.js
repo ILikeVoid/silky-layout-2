@@ -519,17 +519,6 @@ function App() {
                             <span>
                                 DENIAL OF RESPONSIBILITY:<br/><br/>
                             </span>
-                                <span>&nbsp;&nbsp;The SILKY INU project, neither its members, nor its social channels, nor persons and this
-                            document are not responsible for providing trading advice and does not contain any advice on
-                            investment of any kind. In situations where decentralization is the main driving force token, like
-                            \other centralized methods, is recommended consult a professional or legal advisor before purchasing or
-                            \interaction with the SLK token. By purchasing SLK, you agree that the developers neither the
-                            project will bear any legal liability for any damages. The team will remain unscathed for any losses
-                            that may have happened. The SLK token is also not a security and is not claim as such. If you live in an
-                            area where you cannot legally own cryptocurrencies or does not allow any type of trading on markets where
-                            SLK is listed, you must comply with these laws. All cryptocurrencies are risks, and you understand that
-                            these risks may be applied to you when interacting with this token or any others.
-                            </span>
                                 <span className="years">© 2023 SILKY INU</span>
                             </div>
                         </div>
