@@ -174,7 +174,7 @@ function App() {
                     <div className="section-4">
                         <div className="container">
                             <div className="s-4-items">
-                                <h1>How to buy nftl</h1>
+                                <h1>How to buy nft</h1>
                                 <div className="s-4-cards">
                                     <div className="first-cards">
                                         <div className="card-1">
@@ -183,9 +183,9 @@ function App() {
                                         </div>
                                         <div className="card-2">
                                         <span className="card-title">2. Buy <span
-                                            className="text-black d-inline">SOL</span></span>
+                                            className="text-black d-inline">BNB</span></span>
                                             <span
-                                                className="card-info"><span>Run PHANTOM WALLET</span><span
+                                                className="card-info"><span>Run TRUST WALLET</span><span
                                                 className="d-block">then click buy</span></span>
                                         </div>
                                     </div>
@@ -198,7 +198,7 @@ function App() {
                                                 <span className="d-block">Go to SILKY INU website </span>
                                                 <span className="d-block">and click Claim NFT, to</span>
                                                 <span className="d-block">do so you need to have</span>
-                                                <span className="d-block">1 SOL in your wallet</span>
+                                                <span className="d-block">BNB in your wallet</span>
                                             </span>
                                         </div>
                                         <div className="card-4">
@@ -230,13 +230,13 @@ function App() {
                                         <div className="install-items">
                                             <span className="install-title-adaptive"><span>Start</span><span>installation now</span></span>
                                             <span className="install-title">Start installation now</span>
-                                            <span className="install-text">Download PHANTOM WALLET</span>
+                                            <span className="install-text">Download TRUST WALLET</span>
                                             <span className="links">
-                                                <a href="#">
+                                                <a href="https://apps.apple.com/us/app/trust-crypto-bitcoin-wallet/id1288339409">
                                                     <img src={appStore} alt="app-store"/>
                                                     <span>App Store</span>
                                                 </a>
-                                                <a href="#">
+                                                <a href="https://play.google.com/store/apps/details?id=com.wallet.crypto.trustapp&hl=ru&gl=US">
                                                     <img src={googlePlay} alt="app-store"/>
                                                 </a>
                                             </span>
@@ -313,7 +313,7 @@ function App() {
                                     The game is available in web and also for Android and iPhone.
                                     In game you will need to pass various difficult levels to collect more tokens by SILKY character and become the best among other players.
                                     Top 555 players will receive rewards in the form of SILKY tokens on their wallets.
-                                    You need to buy nft for 1 SOLANA, to recieve game access. The SILK tokens that will be collected, you can sell on a exchange.
+                                    You need to buy nft for 1 BNB, to recieve game access. The SILK tokens that will be collected, you can sell on a exchange.
                                 </span>
                                 <div className="screen-game-pictures">
                                     <div className="absolute-img"><img src={gameNft} alt="nft"/></div>
